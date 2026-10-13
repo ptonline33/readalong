@@ -38,6 +38,7 @@
     now: $("#nowPlaying"),
     home: $("#homeBtn"),
     sizeControls: $("#sizeControls"),
+    readerTools: $("#readerTools"),
     smaller: $("#smallerBtn"),
     bigger: $("#biggerBtn"),
     downloads: $("#downloads"),
@@ -135,6 +136,7 @@
     els.player.hidden = name !== "reader";
     els.home.hidden = name !== "reader";
     els.sizeControls.hidden = name !== "reader";
+    els.readerTools.hidden = name !== "reader";
     document.body.classList.toggle("reading", name === "reader");
   }
 

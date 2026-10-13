@@ -52,7 +52,40 @@
           </p>
         </div>
       </details>
-    </div>
+      </div>
+      <div class="tools" id="readerTools" hidden>
+        <label class="chapter-pick">
+          <span class="sr-only">Chapter</span>
+          <select id="chapterSelect"></select>
+        </label>
+        <label class="font-pick"><span class="pick-label">Font</span>
+          <select id="fontSelect">
+            <option value="atkinson">Atkinson Hyperlegible (default)</option>
+            <option value="opendyslexic">OpenDyslexic</option>
+            <option value="lexend">Lexend</option>
+            <option value="literata">Literata (book serif)</option>
+            <option value="lora">Lora (serif)</option>
+            <option value="dancing">Dancing Script (cursive)</option>
+          </select>
+        </label>
+        <label class="font-pick"><span class="pick-label">Theme</span>
+          <select id="themeSelect">
+            <option value="night">Night (default)</option>
+            <option value="sepia">Sepia</option>
+            <option value="light">Light</option>
+            <option value="contrast">High contrast</option>
+          </select>
+        </label>
+        <details class="menu" id="downloads">
+          <summary class="pill">Download</summary>
+          <div class="menu-panel">
+            <a id="dlEpub" class="menu-item" href="#" download>EPUB book (for any e-reader)</a>
+            <a id="dlAudiobook" class="menu-item" href="#" download>Full audiobook (MP3)</a>
+            <p class="menu-label">Chapters (MP3)</p>
+            <div id="dlChapters"></div>
+          </div>
+        </details>
+      </div>
   </header>
 
   <main>
@@ -69,39 +102,6 @@
     <section id="readerView" class="view" hidden>
       <div class="reader-head">
         <h2 id="bookTitle"></h2>
-        <div class="tools">
-          <label class="chapter-pick">
-            <span class="sr-only">Chapter</span>
-            <select id="chapterSelect"></select>
-          </label>
-          <label class="font-pick">Font
-            <select id="fontSelect">
-              <option value="atkinson">Atkinson Hyperlegible (default)</option>
-              <option value="opendyslexic">OpenDyslexic</option>
-              <option value="lexend">Lexend</option>
-              <option value="literata">Literata (book serif)</option>
-              <option value="lora">Lora (serif)</option>
-              <option value="dancing">Dancing Script (cursive)</option>
-            </select>
-          </label>
-          <label class="font-pick">Theme
-            <select id="themeSelect">
-              <option value="night">Night (default)</option>
-              <option value="sepia">Sepia</option>
-              <option value="light">Light</option>
-              <option value="contrast">High contrast</option>
-            </select>
-          </label>
-          <details class="menu" id="downloads">
-            <summary class="pill">Download</summary>
-            <div class="menu-panel">
-              <a id="dlEpub" class="menu-item" href="#" download>EPUB book (for any e-reader)</a>
-              <a id="dlAudiobook" class="menu-item" href="#" download>Full audiobook (MP3)</a>
-              <p class="menu-label">Chapters (MP3)</p>
-              <div id="dlChapters"></div>
-            </div>
-          </details>
-        </div>
       </div>
       <nav class="page-nav" aria-label="Chapter navigation">
         <button class="page-btn" type="button" data-page="prev">&larr; Previous chapter</button>

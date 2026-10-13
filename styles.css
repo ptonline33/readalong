@@ -455,18 +455,9 @@ body.reading main { max-width: none; padding: 0; }
 body.reading .reader-head,
 body.reading .page-nav,
 body.reading .tip { padding-left: clamp(18px, 4vw, 40px); padding-right: clamp(18px, 4vw, 40px); }
-body.reading .text {
-  max-width: none;
-  border-radius: 0;
-  border-left: 0;
-  border-right: 0;
-  padding-left: clamp(18px, 4vw, 40px);
-  padding-right: clamp(18px, 4vw, 40px);
-}
 
 @media (max-width: 600px) {
   body { font-size: 17px; }
-  .text { border-radius: 16px; }
   .ctrl { padding: 8px 10px; font-size: 0.9rem; }
   .play-top { padding: 8px 14px; }
   .player-panel { width: 92vw; right: -4vw; }
@@ -490,7 +481,6 @@ body.reading .text {
   .topbar .tools .pick-label { display: none; }
   .topbar .tools .pill { padding: 8px 14px; font-size: 0.95rem; }
   #readerView .page-nav:first-of-type { display: none; }
-  body.reading .text { padding: 20px 16px 28px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -536,3 +526,15 @@ html[data-read-theme="contrast"] .block.active {
   border-left-color: #ffd60a;
   color: #ffffff;
 }
+
+/* ---------- reading view: flush with the screen edges ---------- */
+/* The reading window is not a card: no side padding, no borders, no rounding,
+   text runs edge to edge. The header scrolls with the page instead of sticking. */
+body.reading .topbar { position: static; }
+body.reading .text {
+  max-width: none;
+  border: 0;
+  border-radius: 0;
+  padding: 8px 0 48px;
+}
+body.reading .text .block { padding-left: 0; padding-right: 0; }

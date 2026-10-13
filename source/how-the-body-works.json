@@ -1,0 +1,46 @@
+{
+  "id": "how-the-body-works",
+  "title": "How the Body Works",
+  "subtitle": "A plain-English tour of your inner machine",
+  "author": "Readalong Originals",
+  "color": "#ff6b35",
+  "description": "Your body is a city of trillions of tiny workers. Learn how they eat, breathe, pump, and repair themselves.",
+  "chapters": [
+    {
+      "title": "The Body as a City",
+      "paragraphs": [
+        "Imagine a city with about thirty-seven trillion residents. That is roughly how many cells make up a human body. Each cell is tiny, usually too small to see without a microscope, but each one does a specific job, like a worker with a specific trade.",
+        "Cells that do similar jobs group together into tissues. Muscle tissue pulls, nerve tissue carries messages, and skin tissue protects. When different tissues team up for a bigger purpose, they form organs, such as the heart, the stomach, and the lungs.",
+        "Organs then work together in systems. The digestive system breaks down food, the circulatory system delivers it, and the respiratory system brings in the oxygen that every cell needs. Think of the systems as departments of the same city, all communicating constantly so the whole place keeps running.",
+        "Your body also has a built-in manager called homeostasis. It keeps the internal temperature near 37 degrees Celsius, which is about 98.6 degrees Fahrenheit, and keeps the blood sugar, the acidity, and the fluid levels within a safe range. When something drifts out of balance, sensors send signals and the body makes adjustments, often without you noticing at all."
+      ]
+    },
+    {
+      "title": "Fuel and Energy",
+      "paragraphs": [
+        "Every cell needs energy, and food is the fuel. When you eat, your digestive system starts working right away. Saliva in your mouth begins breaking down starches, and your stomach uses strong acid and churning muscle to mash food into a thick liquid.",
+        "The small intestine is where most of the real work happens. It is about six to seven meters long when stretched out, and its inner walls are covered in tiny finger-like folds called villi. These folds greatly increase the surface area, so nutrients like sugars, proteins, and fats can pass through into the bloodstream.",
+        "Once sugar enters the blood, the hormone insulin, made by the pancreas, helps move it into cells. Inside each cell, tiny structures called mitochondria burn that sugar with oxygen to produce a molecule called ATP. ATP works like a rechargeable battery, powering everything from lifting a finger to thinking a thought.",
+        "Anything your body cannot use gets sorted out. Water is absorbed back into the body in the large intestine, and waste leaves as stool. Meanwhile, the liver filters the blood, stores some energy as glycogen, and processes many of the chemicals you swallow, turning them into forms your body can safely get rid of."
+      ]
+    },
+    {
+      "title": "The Heart and the Blood Highway",
+      "paragraphs": [
+        "Your heart is a muscular pump about the size of a closed fist. It beats roughly one hundred thousand times a day, pushing blood through a network of roads that, laid end to end, would stretch many thousands of miles. The heart never really rests between beats, although it does pause briefly as each chamber fills.",
+        "Blood carries oxygen from the lungs and nutrients from the gut to every cell. It also carries waste, such as carbon dioxide, back toward the organs that remove it. The main highways are arteries, which carry blood away from the heart under high pressure, and veins, which bring it back at lower pressure.",
+        "Between the two are the capillaries, microscopic vessels with walls thin enough for oxygen and nutrients to pass straight through. This is where the real exchange happens. Each tissue gets exactly what it needs, right at the doorstep of the cells that use it.",
+        "Blood is more than a delivery truck. Red blood cells are packed with a protein called hemoglobin that grabs oxygen in the lungs and drops it off in the tissues. White blood cells patrol for invaders, and platelets rush to the scene when you get a cut, forming clots that seal the leak."
+      ]
+    },
+    {
+      "title": "Breath, Defenses, and Repair",
+      "paragraphs": [
+        "You breathe about twenty thousand times a day without thinking about it. Air travels down your windpipe and into millions of tiny air sacs called alveoli in your lungs. Here, oxygen crosses into the blood, and carbon dioxide travels the other way to be exhaled.",
+        "Your body also has a defense system. The skin is the first wall, and the mucus in your nose and airways traps dust and germs. If something gets past those barriers, the immune system takes over. Specialized white blood cells recognize invaders, sound the alarm, and in some cases remember them, so you can fight off the same germ faster the next time.",
+        "Fever is part of that defense. When the immune system detects an infection, it raises your body temperature a little, which can slow many germs and speed up some immune responses. It may feel miserable, but it is often the body doing its job.",
+        "Healing is constant. Skin cells are replaced every few weeks, and the lining of your stomach renews itself every few days. When you break a bone, cells gather at the site, build a soft bridge of new tissue, and then harden it into bone. Sleep, good food, and movement all help the repair crew do its work."
+      ]
+    }
+  ]
+}

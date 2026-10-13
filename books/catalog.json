@@ -1,0 +1,37 @@
+{
+  "books": [
+    {
+      "id": "how-the-body-works",
+      "title": "How the Body Works",
+      "subtitle": "A plain-English tour of your inner machine",
+      "author": "Readalong Originals",
+      "description": "Your body is a city of trillions of tiny workers. Learn how they eat, breathe, pump, and repair themselves.",
+      "color": "#ff6b35",
+      "duration": 326.95,
+      "chapters": 4,
+      "path": "books/how-the-body-works/"
+    },
+    {
+      "id": "how-the-mind-works",
+      "title": "How the Mind Works",
+      "subtitle": "What is happening inside your head",
+      "author": "Readalong Originals",
+      "description": "Thoughts, memories, feelings, and habits explained in simple language, without the jargon.",
+      "color": "#7b5cff",
+      "duration": 342.94,
+      "chapters": 4,
+      "path": "books/how-the-mind-works/"
+    },
+    {
+      "id": "what-smoking-does",
+      "title": "What Smoking Does to Your Body and Mind",
+      "subtitle": "The honest, plain-English story",
+      "author": "Readalong Originals",
+      "description": "What is actually in cigarette smoke, how it harms the body and brain, why quitting works, and how recovery begins.",
+      "color": "#e63946",
+      "duration": 341.57,
+      "chapters": 4,
+      "path": "books/what-smoking-does/"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Readalong</title>
+  <meta name="description" content="Read and listen together. Every book is an EPUB plus a full audiobook narrated by Andrew.">
+  <meta name="theme-color" content="#0b0820">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <button id="homeBtn" class="pill" type="button" hidden>&larr; Library</button>
+    <a class="brand" href="#/">Readalong</a>
+    <div class="top-actions" id="sizeControls" hidden>
+      <button id="smallerBtn" class="pill" type="button" aria-label="Smaller text">A&minus;</button>
+      <button id="biggerBtn" class="pill" type="button" aria-label="Larger text">A+</button>
+      <button id="playBtn" class="pill play-top" type="button" aria-label="Play">Play</button>
+      <details class="menu" id="player" hidden>
+        <summary class="pill">Audio</summary>
+        <div class="menu-panel player-panel">
+          <div class="transport">
+            <button id="back15" class="ctrl" type="button" aria-label="Back 15 seconds">&minus;15s</button>
+            <button id="prevCh" class="ctrl" type="button" aria-label="Previous chapter">Prev</button>
+            <button id="nextCh" class="ctrl" type="button" aria-label="Next chapter">Next</button>
+            <button id="fwd15" class="ctrl" type="button" aria-label="Forward 15 seconds">+15s</button>
+          </div>
+          <div class="scrub">
+            <span id="curTime">0:00</span>
+            <input id="seek" type="range" min="0" max="0" step="0.1" value="0" aria-label="Seek within chapter">
+            <span id="totTime">0:00</span>
+          </div>
+          <div class="player-meta">
+            <label class="speed">Speed
+              <select id="speed">
+                <option value="0.75">0.75&times;</option>
+                <option value="1">1&times;</option>
+                <option value="1.25">1.25&times;</option>
+                <option value="1.5">1.5&times;</option>
+                <option value="1.75">1.75&times;</option>
+                <option value="2">2&times;</option>
+              </select>
+            </label>
+          </div>
+          <p class="player-status">
+            <span id="nowPlaying" class="now"></span>
+          </p>
+        </div>
+      </details>
+    </div>
+  </header>
+
+  <main>
+    <section id="libraryView" class="view">
+      <div class="hero">
+        <h1>Read it. Hear it. <span class="grad">Follow along.</span></h1>
+        <p>Each book comes as an EPUB and a full audiobook narrated by Andrew. The words light up as he speaks.</p>
+      </div>
+      <div id="bookGrid" class="grid" aria-live="polite">
+        <p class="muted">Loading library&hellip;</p>
+      </div>
+    </section>
+
+    <section id="readerView" class="view" hidden>
+      <div class="reader-head">
+        <h2 id="bookTitle"></h2>
+        <div class="tools">
+          <label class="chapter-pick">
+            <span class="sr-only">Chapter</span>
+            <select id="chapterSelect"></select>
+          </label>
+          <label class="font-pick">Font
+            <select id="fontSelect">
+              <option value="atkinson">Atkinson Hyperlegible (default)</option>
+              <option value="opendyslexic">OpenDyslexic</option>
+              <option value="lexend">Lexend</option>
+              <option value="literata">Literata (book serif)</option>
+              <option value="lora">Lora (serif)</option>
+              <option value="dancing">Dancing Script (cursive)</option>
+            </select>
+          </label>
+          <label class="font-pick">Theme
+            <select id="themeSelect">
+              <option value="night">Night (default)</option>
+              <option value="sepia">Sepia</option>
+              <option value="light">Light</option>
+              <option value="contrast">High contrast</option>
+            </select>
+          </label>
+          <details class="menu" id="downloads">
+            <summary class="pill">Download</summary>
+            <div class="menu-panel">
+              <a id="dlEpub" class="menu-item" href="#" download>EPUB book (for any e-reader)</a>
+              <a id="dlAudiobook" class="menu-item" href="#" download>Full audiobook (MP3)</a>
+              <p class="menu-label">Chapters (MP3)</p>
+              <div id="dlChapters"></div>
+            </div>
+          </details>
+        </div>
+      </div>
+      <nav class="page-nav" aria-label="Chapter navigation">
+        <button class="page-btn" type="button" data-page="prev">&larr; Previous chapter</button>
+        <span class="page-label" data-page-label></span>
+        <button class="page-btn" type="button" data-page="next">Next chapter &rarr;</button>
+      </nav>
+      <p class="tip muted">Tap any paragraph to jump there and start listening.</p>
+      <article id="text" class="text" lang="en"></article>
+      <nav class="page-nav" aria-label="Chapter navigation">
+        <button class="page-btn" type="button" data-page="prev">&larr; Previous chapter</button>
+        <span class="page-label" data-page-label></span>
+        <button class="page-btn" type="button" data-page="next">Next chapter &rarr;</button>
+      </nav>
+      <p id="readerError" class="error" hidden></p>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" hidden></div>
+  <audio id="audio" preload="metadata"></audio>
+  <script src="vendor/jszip.min.js"></script>
+  <script src="app.js" defer></script>
+</body>
+</html>

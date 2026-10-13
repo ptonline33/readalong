@@ -1,0 +1,46 @@
+{
+  "id": "what-smoking-does",
+  "title": "What Smoking Does to Your Body and Mind",
+  "subtitle": "The honest, plain-English story",
+  "author": "Readalong Originals",
+  "color": "#e63946",
+  "description": "What is actually in cigarette smoke, how it harms the body and brain, why quitting works, and how recovery begins.",
+  "chapters": [
+    {
+      "title": "What Is in Cigarette Smoke",
+      "paragraphs": [
+        "A cigarette is more than tobacco. When it burns, it produces smoke containing thousands of chemicals. Health agencies such as the United States National Cancer Institute report that tobacco smoke contains around seven thousand chemicals, and at least seventy of them are known to cause cancer.",
+        "Nicotine is the main addictive drug in tobacco. It is absorbed quickly through the lungs and reaches the brain in about ten seconds, which is why the effect feels so immediate. It raises heart rate and blood pressure, and it triggers the brain's reward system.",
+        "Tar is the sticky residue left when smoke cools. It coats the lungs and contains many of the cancer-causing substances. Carbon monoxide is a poisonous gas that binds to red blood cells far more strongly than oxygen does, so less oxygen reaches the heart, brain, and muscles.",
+        "Many people think filters or light cigarettes make smoking safer. They do not. Smokers tend to inhale more deeply or cover ventilation holes to get their usual dose, so the harm continues. The safest option for your health is to stop using tobacco altogether."
+      ]
+    },
+    {
+      "title": "What Smoking Does to the Body",
+      "paragraphs": [
+        "The damage starts in the mouth and throat. Smoke dries and irritates the tissues, weakens the gums, stains teeth, and dulls the sense of taste and smell. Over time it raises the risk of mouth, throat, and esophageal cancers.",
+        "The lungs take the heaviest hit. Smoking paralyzes and destroys the tiny hair-like cilia that normally sweep mucus and dirt out of the airways. Mucus builds up, coughing becomes a daily habit, and the air sacs slowly lose their elasticity. This is the basis of chronic bronchitis and emphysema, collectively known as COPD. Lung cancer is the most widely known result, and smoking causes the large majority of lung cancer cases.",
+        "The heart and blood vessels suffer too. Nicotine and carbon monoxide make the heart work harder, and smoke damages the lining of the arteries. Fatty deposits build up more easily, narrowing the vessels. This raises the risk of heart attack, stroke, and peripheral artery disease, where the legs do not get enough blood.",
+        "The effects reach beyond the smoker. Secondhand smoke exposes family members and coworkers to many of the same chemicals, and it is linked to respiratory infections and asthma attacks in children, as well as heart disease in adults. Smoking also slows wound healing and harms skin, making it look older over time."
+      ]
+    },
+    {
+      "title": "What Smoking Does to the Mind",
+      "paragraphs": [
+        "Nicotine works on the brain's reward system. It triggers the release of dopamine, the chemical linked to motivation and learning, and it does so quickly and reliably. Over time the brain adapts, producing more nicotine receptors and needing nicotine just to feel normal. This is the basis of physical dependence.",
+        "Addiction is also about habit. Smoking is tied to coffee, stress, meals, phone calls, and breaks, so those moments become cues. The hands want something to do, the mouth wants something to taste, and the brain expects its reward. Breaking those links is often as important as dealing with the chemical craving itself.",
+        "Withdrawal is the brain readjusting. Common symptoms include irritability, anxiety, trouble concentrating, restless sleep, and strong cravings. These feelings are uncomfortable but temporary. Most cravings peak within a few minutes and fade within a short time, even though they can feel endless in the moment.",
+        "Smoking also affects mood and thinking in complicated ways. Many smokers report that cigarettes calm them, but much of that relief is simply the end of withdrawal. Long-term smoking is linked to higher rates of depression and anxiety, and the stress of constant cravings can make everyday tasks feel harder."
+      ]
+    },
+    {
+      "title": "Quitting and Recovery",
+      "paragraphs": [
+        "The body begins to recover surprisingly fast. About twenty minutes after the last cigarette, heart rate and blood pressure start to drop. Within about twelve hours, the carbon monoxide level in the blood returns to normal, so oxygen delivery improves.",
+        "Over the following weeks and months, the changes keep building. Circulation improves, so walking gets easier. Coughing and shortness of breath usually decrease, and the cilia in the airways begin to recover their ability to clear mucus. Taste and smell often return within weeks.",
+        "Over the longer term, the benefits are substantial. Within a year, the excess risk of coronary heart disease drops to about half that of a current smoker. After five to fifteen years, stroke risk can fall to roughly that of a person who never smoked. Quitting also lowers the risk of several cancers, including mouth, throat, bladder, and cervical cancer, with lung cancer risk falling steadily over time.",
+        "Quitting is hard, and most people try more than once before it sticks. Help is available. Nicotine replacement products, prescription medicines, quitline counseling, and support groups all increase the odds of success. If you slip, it does not erase your progress. Each smoke-free day is a real improvement, and the body keeps repairing itself the whole time."
+      ]
+    }
+  ]
+}

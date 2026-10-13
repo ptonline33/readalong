@@ -1,0 +1,46 @@
+{
+  "id": "how-the-mind-works",
+  "title": "How the Mind Works",
+  "subtitle": "What is happening inside your head",
+  "author": "Readalong Originals",
+  "color": "#7b5cff",
+  "description": "Thoughts, memories, feelings, and habits explained in simple language, without the jargon.",
+  "chapters": [
+    {
+      "title": "The Brain Basics",
+      "paragraphs": [
+        "Your brain weighs about three pounds, roughly 1.4 kilograms, and it uses about twenty percent of your body's energy even though it is only a small part of your body's weight. It is the control room for everything you think, feel, remember, and do.",
+        "The brain is made of billions of nerve cells called neurons. Each neuron connects to thousands of others. A neuron sends a message by producing a small electrical pulse that travels along its length. When the pulse reaches the end, it releases chemical messengers called neurotransmitters, which cross a tiny gap and nudge the next neuron to fire or stay quiet.",
+        "Different regions handle different jobs. The frontal lobe, behind your forehead, helps you plan, make decisions, and control impulses. The temporal lobes near your ears process sound and language and help store memories. The occipital lobe at the back handles vision, and the cerebellum near the base helps coordinate movement and balance.",
+        "Your brain also never stops changing. Scientists call this neuroplasticity. When you learn a skill or repeat an action, the connections between neurons get stronger. When you stop using a skill, those connections weaken. This is why practice works, and why new habits take repetition to set in."
+      ]
+    },
+    {
+      "title": "Memory",
+      "paragraphs": [
+        "Memory is not a single storage box. It works in stages. Information first enters sensory memory, which holds it for a fraction of a second. If you pay attention to it, it moves into short-term memory, which holds only a handful of items at a time, often around four to seven.",
+        "To become long-term memory, information must be encoded and consolidated. Encoding means connecting the new information to things you already know. Repeating facts, asking yourself questions, and linking ideas to pictures or stories all help. The more connections a memory has, the easier it is to find later.",
+        "Sleep plays a key role. During deep sleep and dream sleep, the brain replays the day's experiences and strengthens the important ones, while clearing out some of the less useful details. This is one reason an all-nighter before an exam tends to backfire. Your brain needs the night to file things away.",
+        "Recall is also more like rebuilding than replaying. Each time you remember something, your brain reconstructs it, and that rebuilding can subtly change the memory. This is why eyewitness accounts can be unreliable and why two people can remember the same event in slightly different ways."
+      ]
+    },
+    {
+      "title": "Emotions and the Alarm System",
+      "paragraphs": [
+        "Deep inside the brain, the amygdala acts as a kind of alarm system. It constantly scans incoming information for danger, and when it senses a threat, it can trigger a response in a fraction of a second, long before your conscious mind has time to think it through.",
+        "When the alarm sounds, the body switches into fight-or-flight mode. The adrenal glands release adrenaline, your heart beats faster, your breathing quickens, your muscles tense, and your digestion slows. This is a survival system designed for a sudden tiger, but it also activates when you face a stressful email or a tense conversation.",
+        "Emotions are not just feelings. They are full body-and-brain responses. Fear, joy, anger, and sadness each come with changes in heart rate, facial expression, hormones, and attention. The prefrontal cortex, the thinking part of the brain, can help calm the alarm by reappraising what is happening, which is one reason naming a feeling often makes it easier to handle.",
+        "Chronic stress is different from a short alarm. When the alarm stays on for weeks or months, the stress hormone cortisol keeps circulating. Over time that can affect sleep, mood, memory, and focus. Rest, exercise, social connection, and deliberate breathing help turn the alarm back off."
+      ]
+    },
+    {
+      "title": "Habits, Rewards, and Decisions",
+      "paragraphs": [
+        "Much of what you do each day runs on habit. A habit usually follows a simple loop: a cue, a routine, and a reward. The cue might be a feeling, a time of day, or a place. The routine is the action. The reward tells your brain that the action was worth remembering, so next time the cue appears, the urge comes back a little stronger.",
+        "The chemical at the center of this loop is often described as dopamine. It is less a pleasure chemical than a learning and motivation signal. Dopamine rises when something turns out better than expected, and it teaches the brain what to pursue again. This is why rewards that arrive quickly and unpredictably can be so powerful.",
+        "Psychologist Daniel Kahneman described two modes of thinking. System one is fast, automatic, and intuitive. System two is slow, deliberate, and effortful. Most of the time system one runs the show, which is efficient but can lead to shortcuts and errors, especially when you are tired or rushed.",
+        "You can work with these systems instead of against them. Make good habits easier by reducing friction, such as keeping healthy food visible. Make unhelpful habits harder by changing the cue. And when an important decision is coming up, slow down, write things out, and give your deliberate thinking time to catch up."
+      ]
+    }
+  ]
+}

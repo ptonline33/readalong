@@ -1,0 +1,125 @@
+{
+  "id": "how-the-body-works",
+  "title": "How the Body Works",
+  "subtitle": "A plain-English tour of your inner machine",
+  "author": "Readalong Originals",
+  "description": "Your body is a city of trillions of tiny workers. Learn how they eat, breathe, pump, and repair themselves.",
+  "color": "#ff6b35",
+  "narrator": "Andrew (Microsoft neural voice)",
+  "epub": "book.epub",
+  "duration": 326.95,
+  "chapters": [
+    {
+      "title": "The Body as a City",
+      "audio": "audio/ch01.mp3",
+      "duration": 81.74,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 2.472
+        },
+        {
+          "start": 3.072,
+          "end": 19.536
+        },
+        {
+          "start": 20.136,
+          "end": 37.104
+        },
+        {
+          "start": 37.704,
+          "end": 56.856
+        },
+        {
+          "start": 57.456,
+          "end": 81.696
+        }
+      ]
+    },
+    {
+      "title": "Fuel and Energy",
+      "audio": "audio/ch02.mp3",
+      "duration": 83.98,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 2.616
+        },
+        {
+          "start": 3.216,
+          "end": 20.232
+        },
+        {
+          "start": 20.832,
+          "end": 40.992
+        },
+        {
+          "start": 41.592,
+          "end": 63.24
+        },
+        {
+          "start": 63.84,
+          "end": 83.928
+        }
+      ]
+    },
+    {
+      "title": "The Heart and the Blood Highway",
+      "audio": "audio/ch03.mp3",
+      "duration": 79.18,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.144
+        },
+        {
+          "start": 3.744,
+          "end": 24.624
+        },
+        {
+          "start": 25.224,
+          "end": 44.136
+        },
+        {
+          "start": 44.736,
+          "end": 60.6
+        },
+        {
+          "start": 61.2,
+          "end": 79.128
+        }
+      ]
+    },
+    {
+      "title": "Breath, Defenses, and Repair",
+      "audio": "audio/ch04.mp3",
+      "duration": 82.06,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.744
+        },
+        {
+          "start": 4.344,
+          "end": 21.96
+        },
+        {
+          "start": 22.56,
+          "end": 45.12
+        },
+        {
+          "start": 45.72,
+          "end": 61.08
+        },
+        {
+          "start": 61.68,
+          "end": 82.008
+        }
+      ]
+    }
+  ],
+  "audiobook": {
+    "file": "audiobook.mp3",
+    "duration": 326.95
+  }
+}

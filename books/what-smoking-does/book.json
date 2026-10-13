@@ -1,0 +1,125 @@
+{
+  "id": "what-smoking-does",
+  "title": "What Smoking Does to Your Body and Mind",
+  "subtitle": "The honest, plain-English story",
+  "author": "Readalong Originals",
+  "description": "What is actually in cigarette smoke, how it harms the body and brain, why quitting works, and how recovery begins.",
+  "color": "#e63946",
+  "narrator": "Andrew (Microsoft neural voice)",
+  "epub": "book.epub",
+  "duration": 341.57,
+  "chapters": [
+    {
+      "title": "What Is in Cigarette Smoke",
+      "audio": "audio/ch01.mp3",
+      "duration": 74.9,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 2.832
+        },
+        {
+          "start": 3.432,
+          "end": 21.576
+        },
+        {
+          "start": 22.176,
+          "end": 38.472
+        },
+        {
+          "start": 39.072,
+          "end": 57.744
+        },
+        {
+          "start": 58.344,
+          "end": 74.856
+        }
+      ]
+    },
+    {
+      "title": "What Smoking Does to the Body",
+      "audio": "audio/ch02.mp3",
+      "duration": 90.91,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.048
+        },
+        {
+          "start": 3.648,
+          "end": 19.032
+        },
+        {
+          "start": 19.632,
+          "end": 48.888
+        },
+        {
+          "start": 49.488,
+          "end": 69.36
+        },
+        {
+          "start": 69.96,
+          "end": 90.864
+        }
+      ]
+    },
+    {
+      "title": "What Smoking Does to the Mind",
+      "audio": "audio/ch03.mp3",
+      "duration": 87.19,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.12
+        },
+        {
+          "start": 3.72,
+          "end": 23.976
+        },
+        {
+          "start": 24.576,
+          "end": 46.128
+        },
+        {
+          "start": 46.728,
+          "end": 67.416
+        },
+        {
+          "start": 68.016,
+          "end": 87.144
+        }
+      ]
+    },
+    {
+      "title": "Quitting and Recovery",
+      "audio": "audio/ch04.mp3",
+      "duration": 88.56,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 2.856
+        },
+        {
+          "start": 3.456,
+          "end": 19.512
+        },
+        {
+          "start": 20.112,
+          "end": 39.096
+        },
+        {
+          "start": 39.696,
+          "end": 65.136
+        },
+        {
+          "start": 65.736,
+          "end": 88.512
+        }
+      ]
+    }
+  ],
+  "audiobook": {
+    "file": "audiobook.mp3",
+    "duration": 341.57
+  }
+}

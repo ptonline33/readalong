@@ -116,6 +116,12 @@ body {
   cursor: pointer;
 }
 .pill:hover { border-color: var(--accent); }
+.install-btn {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #0b0820;
+  border-color: transparent;
+}
+.install-btn:hover { border-color: transparent; filter: brightness(1.1); }
 
 /* ---------- layout ---------- */
 main {

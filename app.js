@@ -37,6 +37,7 @@
     speed: $("#speed"),
     now: $("#nowPlaying"),
     home: $("#homeBtn"),
+    install: $("#installBtn"),
     sizeControls: $("#sizeControls"),
     readerTools: $("#readerTools"),
     smaller: $("#smallerBtn"),
@@ -87,6 +88,7 @@
     activeBlock: -1,
     lastSave: 0,
     sizeIndex: DEFAULT_SIZE_INDEX,
+    view: "library",
   };
 
   /* ---------- helpers ---------- */
@@ -131,6 +133,7 @@
   }
 
   function showView(name) {
+    state.view = name;
     els.library.hidden = name !== "library";
     els.reader.hidden = name !== "reader";
     els.player.hidden = name !== "reader";
@@ -138,7 +141,64 @@
     els.sizeControls.hidden = name !== "reader";
     els.readerTools.hidden = name !== "reader";
     document.body.classList.toggle("reading", name === "reader");
+    updateInstallBtn();
   }
+
+  /* ---------- install (PWA) ---------- */
+
+  let deferredPrompt = null;
+  let installOutcome = "";
+
+  function isStandalone() {
+    return window.matchMedia("(display-mode: standalone)").matches ||
+      window.navigator.standalone === true;
+  }
+
+  function isIOS() {
+    return /iP(hone|ad|od)/.test(navigator.userAgent) ||
+      (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  }
+
+  function canInstall() {
+    if (isStandalone() || installOutcome) return false;
+    return Boolean(deferredPrompt) || isIOS();
+  }
+
+  function updateInstallBtn() {
+    els.install.hidden = state.view !== "library" || !canInstall();
+  }
+
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    updateInstallBtn();
+  });
+
+  window.addEventListener("appinstalled", () => {
+    deferredPrompt = null;
+    installOutcome = "accepted";
+    updateInstallBtn();
+    toast("Readalong installed.");
+  });
+
+  els.install.addEventListener("click", async () => {
+    if (!deferredPrompt) {
+      if (isIOS()) toast('On iPhone: tap Share, then "Add to Home Screen".');
+      return;
+    }
+    const evt = deferredPrompt;
+    deferredPrompt = null;
+    els.install.hidden = true;
+    try {
+      await evt.prompt();
+      const { outcome } = await evt.userChoice;
+      installOutcome = outcome;
+      if (outcome === "accepted") toast("Installing Readalong…");
+      else updateInstallBtn();
+    } catch {
+      updateInstallBtn();
+    }
+  });
 
   /* ---------- EPUB parsing ---------- */
 

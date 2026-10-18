@@ -32,6 +32,17 @@
       "duration": 341.57,
       "chapters": 4,
       "path": "books/what-smoking-does/"
+    },
+    {
+      "id": "fasting-three-days",
+      "title": "Fasting for Three Days",
+      "subtitle": "What happens hour by hour",
+      "author": "Readalong Originals",
+      "description": "What actually happens inside your body when you fast for three days, explained in plain language with biblical context.",
+      "color": "#4a9eff",
+      "duration": 2031.29,
+      "chapters": 11,
+      "path": "books/fasting-three-days/"
     }
   ]
 }

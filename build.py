@@ -20,6 +20,7 @@ paragraphs[]}]) and run the command above. Needs ffmpeg/ffprobe on PATH.
 import asyncio
 import html
 import json
+import os
 import shutil
 import subprocess
 import sys
@@ -38,15 +39,11 @@ VOICE = "en-US-AndrewNeural"   # Microsoft neural male voice
 RATE = "-5%"                   # slightly slower, easier to follow
 GAP_SECONDS = 0.6              # pause between paragraphs
 
-# Since Oct 2026 the old speech.platform.bing.com synthesis host returns 403
-# for many clients. The same neural voices are served from
-# api.msedgeservices.com, which takes the token as Ocp-Apim-Subscription-Key.
-# Point edge-tts at that host. Without this, every synthesis call fails.
-edge_comm.WSS_URL = (
-    "wss://api.msedgeservices.com/tts/cognitiveservices/websocket/v1"
-    f"?Ocp-Apim-Subscription-Key={edge_tts.constants.TRUSTED_CLIENT_TOKEN}"
-)
-edge_comm.SEC_MS_GEC_VERSION = "1-143.0.3650.75"
+# edge-tts 7.3.1 uses a working synthesis host by default. If a future
+# version breaks again, the endpoint can be overridden without editing code:
+#   READALONG_TTS_WSS_URL=wss://... .venv/bin/python build.py
+if os.environ.get("READALONG_TTS_WSS_URL"):
+    edge_comm.WSS_URL = os.environ["READALONG_TTS_WSS_URL"]
 
 EPUB_CSS = """
 body { font-family: "Atkinson Hyperlegible", Arial, sans-serif; line-height: 1.7; font-size: 1.1em; }
@@ -99,11 +96,15 @@ def build_chapter_audio(index, chapter, out_mp3, tmp):
             check=True,
         )
 
-    clip_paths = []
-    for i, text in enumerate(texts):
-        clip = tmp / f"ch{index + 1:02d}-{i:03d}.mp3"
-        asyncio.run(synthesize(text, clip))
-        clip_paths.append(clip)
+    clip_paths = [tmp / f"ch{index + 1:02d}-{i:03d}.mp3" for i in range(len(texts))]
+
+    async def synth_all():
+        # Paragraphs are independent, so narrate them side by side instead of
+        # waiting for each websocket round-trip in turn.
+        await asyncio.gather(*(synthesize(text, clip)
+                               for text, clip in zip(texts, clip_paths)))
+
+    asyncio.run(synth_all())
 
     # Measure each clip and lay out start/end times with the gaps between them.
     elements = []

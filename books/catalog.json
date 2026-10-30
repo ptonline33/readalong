@@ -1,6 +1,39 @@
 {
   "books": [
     {
+      "id": "fasting-three-days",
+      "title": "Fasting for Three Days",
+      "subtitle": "What happens hour by hour",
+      "author": "Readalong Originals",
+      "description": "What actually happens inside your body when you fast for three days, explained in plain language with biblical context.",
+      "color": "#4a9eff",
+      "duration": 2031.29,
+      "chapters": 11,
+      "path": "books/fasting-three-days/"
+    },
+    {
+      "id": "gratitude",
+      "title": "Gratitude",
+      "subtitle": "The quiet power of noticing what is already here",
+      "author": "Readalong Originals",
+      "description": "A practical, science-backed guide to noticing what is good, loving what is ordinary, and building a habit of thankfulness that holds up in hard seasons.",
+      "color": "#e0a33e",
+      "duration": 1011.72,
+      "chapters": 10,
+      "path": "books/gratitude/"
+    },
+    {
+      "id": "gratitude-with-jesus",
+      "title": "Gratitude with Jesus",
+      "subtitle": "A thankful heart in the footsteps of Christ",
+      "author": "Readalong Originals",
+      "description": "A gentle, Scripture-rooted journey through gratitude in the life and teaching of Jesus, with simple practices for receiving grace and giving thanks in every season.",
+      "color": "#c9a227",
+      "duration": 991.03,
+      "chapters": 10,
+      "path": "books/gratitude-with-jesus/"
+    },
+    {
       "id": "how-the-body-works",
       "title": "How the Body Works",
       "subtitle": "A plain-English tour of your inner machine",
@@ -32,17 +65,6 @@
       "duration": 341.57,
       "chapters": 4,
       "path": "books/what-smoking-does/"
-    },
-    {
-      "id": "fasting-three-days",
-      "title": "Fasting for Three Days",
-      "subtitle": "What happens hour by hour",
-      "author": "Readalong Originals",
-      "description": "What actually happens inside your body when you fast for three days, explained in plain language with biblical context.",
-      "color": "#4a9eff",
-      "duration": 2031.29,
-      "chapters": 11,
-      "path": "books/fasting-three-days/"
     }
   ]
 }

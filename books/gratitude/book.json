@@ -1,0 +1,327 @@
+{
+  "id": "gratitude",
+  "title": "Gratitude",
+  "subtitle": "The quiet power of noticing what is already here",
+  "author": "Readalong Originals",
+  "description": "A practical, science-backed guide to noticing what is good, loving what is ordinary, and building a habit of thankfulness that holds up in hard seasons.",
+  "color": "#e0a33e",
+  "narrator": "Andrew (Microsoft neural voice)",
+  "epub": "book.epub",
+  "duration": 1011.72,
+  "chapters": [
+    {
+      "title": "The Day You Almost Missed",
+      "audio": "audio/ch01.mp3",
+      "duration": 101.45,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 2.784
+        },
+        {
+          "start": 3.384,
+          "end": 23.256
+        },
+        {
+          "start": 23.856,
+          "end": 42.192
+        },
+        {
+          "start": 42.792,
+          "end": 68.424
+        },
+        {
+          "start": 69.024,
+          "end": 92.064
+        },
+        {
+          "start": 92.664,
+          "end": 101.448
+        }
+      ]
+    },
+    {
+      "title": "What Gratitude Really Means",
+      "audio": "audio/ch02.mp3",
+      "duration": 106.06,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.12
+        },
+        {
+          "start": 3.72,
+          "end": 23.136
+        },
+        {
+          "start": 23.736,
+          "end": 43.68
+        },
+        {
+          "start": 44.28,
+          "end": 65.904
+        },
+        {
+          "start": 66.504,
+          "end": 90.456
+        },
+        {
+          "start": 91.056,
+          "end": 106.056
+        }
+      ]
+    },
+    {
+      "title": "The Brain Is Built to Notice Thorns",
+      "audio": "audio/ch03.mp3",
+      "duration": 98.5,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.576
+        },
+        {
+          "start": 4.176,
+          "end": 25.656
+        },
+        {
+          "start": 26.256,
+          "end": 44.928
+        },
+        {
+          "start": 45.528,
+          "end": 67.584
+        },
+        {
+          "start": 68.184,
+          "end": 87.456
+        },
+        {
+          "start": 88.056,
+          "end": 98.496
+        }
+      ]
+    },
+    {
+      "title": "What Thankfulness Does to the Body",
+      "audio": "audio/ch04.mp3",
+      "duration": 110.66,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.432
+        },
+        {
+          "start": 4.032,
+          "end": 22.752
+        },
+        {
+          "start": 23.352,
+          "end": 46.176
+        },
+        {
+          "start": 46.776,
+          "end": 73.656
+        },
+        {
+          "start": 74.256,
+          "end": 91.584
+        },
+        {
+          "start": 92.184,
+          "end": 110.664
+        }
+      ]
+    },
+    {
+      "title": "The Three Good Things Habit",
+      "audio": "audio/ch05.mp3",
+      "duration": 102.46,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.0
+        },
+        {
+          "start": 3.6,
+          "end": 19.32
+        },
+        {
+          "start": 19.92,
+          "end": 42.312
+        },
+        {
+          "start": 42.912,
+          "end": 61.248
+        },
+        {
+          "start": 61.848,
+          "end": 85.032
+        },
+        {
+          "start": 85.632,
+          "end": 102.456
+        }
+      ]
+    },
+    {
+      "title": "Savoring the Ordinary",
+      "audio": "audio/ch06.mp3",
+      "duration": 95.98,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 2.904
+        },
+        {
+          "start": 3.504,
+          "end": 22.176
+        },
+        {
+          "start": 22.776,
+          "end": 43.296
+        },
+        {
+          "start": 43.896,
+          "end": 65.496
+        },
+        {
+          "start": 66.096,
+          "end": 83.16
+        },
+        {
+          "start": 83.76,
+          "end": 95.976
+        }
+      ]
+    },
+    {
+      "title": "The Letter You Never Sent",
+      "audio": "audio/ch07.mp3",
+      "duration": 95.26,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 2.808
+        },
+        {
+          "start": 3.408,
+          "end": 19.272
+        },
+        {
+          "start": 19.872,
+          "end": 36.264
+        },
+        {
+          "start": 36.864,
+          "end": 54.096
+        },
+        {
+          "start": 54.696,
+          "end": 75.288
+        },
+        {
+          "start": 75.888,
+          "end": 95.256
+        }
+      ]
+    },
+    {
+      "title": "Thanking People Who Hurt You",
+      "audio": "audio/ch08.mp3",
+      "duration": 102.36,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 2.736
+        },
+        {
+          "start": 3.336,
+          "end": 22.2
+        },
+        {
+          "start": 22.8,
+          "end": 42.504
+        },
+        {
+          "start": 43.104,
+          "end": 67.68
+        },
+        {
+          "start": 68.28,
+          "end": 83.544
+        },
+        {
+          "start": 84.144,
+          "end": 102.36
+        }
+      ]
+    },
+    {
+      "title": "Gratitude in Hard Seasons",
+      "audio": "audio/ch09.mp3",
+      "duration": 101.14,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.072
+        },
+        {
+          "start": 3.672,
+          "end": 22.44
+        },
+        {
+          "start": 23.04,
+          "end": 43.128
+        },
+        {
+          "start": 43.728,
+          "end": 64.656
+        },
+        {
+          "start": 65.256,
+          "end": 84.096
+        },
+        {
+          "start": 84.696,
+          "end": 101.136
+        }
+      ]
+    },
+    {
+      "title": "A Life of Noticing",
+      "audio": "audio/ch10.mp3",
+      "duration": 97.87,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 2.592
+        },
+        {
+          "start": 3.192,
+          "end": 26.28
+        },
+        {
+          "start": 26.88,
+          "end": 46.44
+        },
+        {
+          "start": 47.04,
+          "end": 65.28
+        },
+        {
+          "start": 65.88,
+          "end": 81.192
+        },
+        {
+          "start": 81.792,
+          "end": 97.872
+        }
+      ]
+    }
+  ],
+  "audiobook": {
+    "file": "audiobook.mp3",
+    "duration": 1012.15
+  }
+}

@@ -25,4 +25,6 @@ Project changes, newest first.
   correct element counts per chapter; `ffprobe` confirms mono 24 kHz 64 kbps
   MP3; full audiobook durations are 16.9 min (*Gratitude*) and 16.5 min
   (*Gratitude with Jesus*); both MP3s decode cleanly. Both books appear in
-  `books/catalog.json`.
+  `books/catalog.json`. Pushed to GitHub and deployed to Vercel production;
+  `https://readalong-virid.vercel.app/books/catalog.json` lists both books and
+  the live EPUB/MP3 URLs return HTTP 200 with the correct content types.

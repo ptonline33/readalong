@@ -293,6 +293,24 @@ select {
 .page-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
 .page-btn:disabled { opacity: 0.35; cursor: default; }
 .page-label { color: var(--muted); font-weight: 700; font-size: 0.95rem; }
+.finish-row {
+  display: flex;
+  justify-content: center;
+  margin: 18px 0 8px;
+}
+.finish-btn {
+  font: inherit;
+  font-weight: 800;
+  font-size: 1rem;
+  color: #0b0820;
+  background: linear-gradient(90deg, #34c759, #00e676);
+  border: 0;
+  border-radius: 999px;
+  padding: 14px 28px;
+  cursor: pointer;
+  box-shadow: 0 10px 24px -8px rgba(0, 230, 118, 0.6);
+}
+.finish-btn:hover { filter: brightness(1.08); }
 
 .text {
   max-width: 68ch;

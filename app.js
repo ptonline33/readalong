@@ -49,6 +49,8 @@
     toast: $("#toast"),
     font: $("#fontSelect"),
     theme: $("#themeSelect"),
+    finishRow: $("#finishRow"),
+    finishBtn: $("#finishBtn"),
   };
 
   const THEME_KEY = "readalong:theme";
@@ -324,7 +326,7 @@
       body.append(sub, desc, meta);
 
       const progress = readProgress(book.id);
-      const finished = progress && (progress.finished || (progress.chapter === book.chapters - 1 && progress.time > 5));
+      const finished = !!(progress && progress.finished);
       if (finished) {
         const fin = document.createElement("div");
         fin.className = "finished";
@@ -480,6 +482,21 @@
     document.querySelectorAll("[data-page-label]").forEach((l) => {
       l.textContent = total ? `Chapter ${i + 1} of ${total}` : "";
     });
+    if (els.finishRow) els.finishRow.hidden = !(total > 0 && i === total - 1);
+  }
+
+  function markFinishedAndBack() {
+    if (!state.book) return;
+    const last = state.book.chapters.length - 1;
+    const dur = state.book.chapters[last] && state.book.chapters[last].duration
+      ? state.book.chapters[last].duration
+      : (els.audio.duration || els.audio.currentTime || 0);
+    localStorage.setItem(
+      PROGRESS_KEY(state.book.id),
+      JSON.stringify({ chapter: last, time: dur, finished: true })
+    );
+    toast("✓ Finished! Back to the library.");
+    location.hash = "#/";
   }
 
   function loadChapter(index, startTime = 0, autoplay = false) {
@@ -610,6 +627,7 @@
 
   function bindPlayer() {
     els.home.addEventListener("click", () => { location.hash = "#/"; });
+    if (els.finishBtn) els.finishBtn.addEventListener("click", markFinishedAndBack);
 
     document.querySelectorAll("[data-page]").forEach((btn) => {
       btn.addEventListener("click", () => {

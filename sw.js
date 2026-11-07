@@ -4,7 +4,7 @@
  *    can be listened to offline after it has been opened once.
  *  - Range requests (needed for audio seeking) are answered from the cached copy.
  */
-const VERSION = "readalong-v4";
+const VERSION = "readalong-v5";
 const SHELL = [
   "./",
   "index.html",

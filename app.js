@@ -115,15 +115,58 @@
     }
   }
 
+  function isBookFinished(progress, book) {
+    if (progress && progress.finished) return true;
+    if (!progress || !book || !book.chapters) return false;
+    const last = book.chapters.length - 1;
+    if (progress.chapter !== last) return false;
+    const dur = book.chapters[last] && book.chapters[last].duration;
+    return !!dur && progress.time > 0 && progress.time >= dur - 3;
+  }
+
   function saveProgress(force = false) {
     if (!state.book) return;
     const now = Date.now();
     if (!force && now - state.lastSave < 2500) return;
     state.lastSave = now;
+    const prev = readProgress(state.book.id) || {};
+    const isLast = state.chapterIndex === state.book.chapters.length - 1;
+    const dur = els.audio.duration || (state.book.chapters[state.chapterIndex] && state.book.chapters[state.chapterIndex].duration) || 0;
+    const time = els.audio.currentTime || 0;
+    const finished = !!prev.finished || (isLast && dur > 0 && time >= dur - 3);
     localStorage.setItem(
       PROGRESS_KEY(state.book.id),
-      JSON.stringify({ chapter: state.chapterIndex, time: els.audio.currentTime || 0 })
+      JSON.stringify({ chapter: state.chapterIndex, time, finished })
     );
+  }
+
+  async function downloadFile(url, filename, label) {
+    // Blob-then-download so iOS/Android also save it (plain download attr
+    // opens it in the player instead of saving). Falls back to a plain
+    // anchor if the fetch fails.
+    try {
+      toast(`Downloading ${label || filename}…`);
+      const res = await fetch(url, { cache: "no-cache" });
+      if (!res.ok) throw new Error("fetch failed");
+      const blob = await res.blob();
+      const objUrl = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = objUrl;
+      a.download = filename;
+      document.body.append(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(objUrl), 4000);
+      toast(`Saved ${filename}`);
+    } catch (e) {
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      document.body.append(a);
+      a.click();
+      a.remove();
+      toast("Download started — check Downloads");
+    }
   }
 
   function setAccent(color) {
@@ -281,18 +324,42 @@
       body.append(sub, desc, meta);
 
       const progress = readProgress(book.id);
-      if (progress && progress.time > 5) {
+      const finished = progress && (progress.finished || (progress.chapter === book.chapters - 1 && progress.time > 5));
+      if (finished) {
+        const fin = document.createElement("div");
+        fin.className = "finished";
+        fin.textContent = "✓ Finished";
+        body.append(fin);
+      } else if (progress && progress.time > 5) {
         const resume = document.createElement("div");
         resume.className = "resume";
         resume.textContent = `Resume: chapter ${progress.chapter + 1} at ${fmt(progress.time)}`;
         body.append(resume);
       }
 
+      const actions = document.createElement("div");
+      actions.className = "card-actions";
+
       const go = document.createElement("button");
       go.className = "go";
       go.type = "button";
-      go.textContent = "Read & listen";
-      body.append(go);
+      go.textContent = finished ? "Read again" : "Read & listen";
+      actions.append(go);
+
+      // Download full audiobook straight from the library (no need to open the reader).
+      const dl = document.createElement("button");
+      dl.className = "dl-audio";
+      dl.type = "button";
+      dl.textContent = "⬇ Audio";
+      dl.title = `Download full audiobook (${fmtLong(book.duration)} MP3)`;
+      const safe = (s) => s.replace(/[\\/:*?"<>|]+/g, "").trim();
+      dl.addEventListener("click", (e) => {
+        e.stopPropagation();
+        downloadFile(`${book.path}audiobook.mp3`, `${safe(book.title)} (audiobook).mp3`, "audiobook");
+      });
+      actions.append(dl);
+
+      body.append(actions);
 
       card.append(cover, body);
       const open = () => { location.hash = `#/read/${encodeURIComponent(book.id)}`; };
@@ -346,9 +413,11 @@
       });
 
       const saved = readProgress(id);
-      const startChapter = saved && saved.chapter < book.chapters.length ? saved.chapter : 0;
-      loadChapter(startChapter, saved && saved.chapter === startChapter ? saved.time : 0, false);
+      const isDone = saved && saved.finished;
+      const startChapter = isDone ? 0 : (saved && saved.chapter < book.chapters.length ? saved.chapter : 0);
+      loadChapter(startChapter, isDone ? 0 : (saved && saved.chapter === startChapter ? saved.time : 0), false);
       els.audio.playbackRate = Number(els.speed.value);
+      if (isDone) toast("Finished ✓ — start from chapter 1 to read again");
     } catch (err) {
       console.error(err);
       els.title.textContent = "Could not open this book";
@@ -361,11 +430,21 @@
     const safe = (s) => s.replace(/[\\/:*?"<>|]+/g, "").trim();
     els.dlEpub.href = base + book.epub;
     els.dlEpub.download = `${safe(book.title)}.epub`;
+    els.dlEpub.onclick = (e) => {
+      e.preventDefault();
+      els.downloads.open = false;
+      downloadFile(els.dlEpub.href, els.dlEpub.download, "EPUB");
+    };
 
     if (book.audiobook) {
       els.dlAudiobook.hidden = false;
       els.dlAudiobook.href = base + book.audiobook.file;
       els.dlAudiobook.download = `${safe(book.title)} (audiobook).mp3`;
+      els.dlAudiobook.onclick = (e) => {
+        e.preventDefault();
+        els.downloads.open = false;
+        downloadFile(els.dlAudiobook.href, els.dlAudiobook.download, "audiobook");
+      };
     } else {
       els.dlAudiobook.hidden = true;
     }
@@ -377,12 +456,13 @@
       a.href = base + ch.audio;
       a.download = `${String(i + 1).padStart(2, "0")} ${safe(ch.title)}.mp3`;
       a.textContent = `${i + 1}. ${ch.title}`;
-      a.addEventListener("click", () => { els.downloads.open = false; });
+      a.addEventListener("click", (e) => {
+        e.preventDefault();
+        els.downloads.open = false;
+        downloadFile(a.href, a.download, `Chapter ${i + 1}`);
+      });
       els.dlChapters.append(a);
     });
-    for (const a of [els.dlEpub, els.dlAudiobook]) {
-      a.addEventListener("click", () => { els.downloads.open = false; });
-    }
   }
 
   function toast(message) {
@@ -587,6 +667,9 @@
         loadChapter(next, 0, true);
       } else {
         els.play.textContent = "Play";
+        // Finished the last chapter — persist the finished flag.
+        saveProgress(true);
+        toast("✓ Finished! Check your library.");
       }
     });
 

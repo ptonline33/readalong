@@ -211,8 +211,29 @@ main {
 .card-body p { margin: 0; color: var(--muted); font-size: 1rem; }
 .meta { font-size: 0.95rem; color: var(--muted); }
 .resume { color: var(--accent); font-weight: 700; font-size: 0.95rem; }
+.finished {
+  color: #0b0820;
+  font-weight: 800;
+  font-size: 0.85rem;
+  background: linear-gradient(90deg, #34c759, #00e676);
+  border-radius: 999px;
+  padding: 4px 12px;
+  align-self: flex-start;
+}
+.card-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: auto; }
+.dl-audio {
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text);
+  background: var(--panel-2);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+.dl-audio:hover { border-color: var(--accent); color: var(--accent); }
 .go {
-  margin-top: auto;
   align-self: flex-start;
   font: inherit;
   font-weight: 700;

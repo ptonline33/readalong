@@ -56,6 +56,28 @@
       "path": "books/how-the-mind-works/"
     },
     {
+      "id": "istqb-ctfl",
+      "title": "ISTQB Foundation Level",
+      "subtitle": "The complete CTFL version 4.0 audio course",
+      "author": "QAReady",
+      "description": "A full narrated course for the ISTQB Certified Tester Foundation Level syllabus version 4.0: all six chapters, the seven principles, test levels and types, static testing, black-box and white-box techniques, test management, tool support, terminology precision and exam strategy.",
+      "color": "#3ddc84",
+      "duration": 3541.31,
+      "chapters": 32,
+      "path": "books/istqb-ctfl/"
+    },
+    {
+      "id": "qaready-plan",
+      "title": "The QAReady Plan",
+      "subtitle": "Twenty-four weeks from the service desk to a QA Analyst role",
+      "author": "QAReady",
+      "description": "An audio companion to the QAReady course: the full twenty-four week study plan, the seven phases, the weekly rhythm, the portfolio, and the career guide for moving from application support into software quality assurance.",
+      "color": "#7b5cff",
+      "duration": 1414.08,
+      "chapters": 15,
+      "path": "books/qaready-plan/"
+    },
+    {
       "id": "what-smoking-does",
       "title": "What Smoking Does to Your Body and Mind",
       "subtitle": "The honest, plain-English story",

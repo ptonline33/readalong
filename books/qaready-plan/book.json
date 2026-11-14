@@ -1,0 +1,494 @@
+{
+  "id": "qaready-plan",
+  "title": "The QAReady Plan",
+  "subtitle": "Twenty-four weeks from the service desk to a QA Analyst role",
+  "author": "QAReady",
+  "description": "An audio companion to the QAReady course: the full twenty-four week study plan, the seven phases, the weekly rhythm, the portfolio, and the career guide for moving from application support into software quality assurance.",
+  "color": "#7b5cff",
+  "narrator": "Andrew (Microsoft neural voice)",
+  "epub": "book.epub",
+  "duration": 1414.08,
+  "chapters": [
+    {
+      "title": "Why this roadmap exists",
+      "audio": "audio/ch01.mp3",
+      "duration": 120.48,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 2.976
+        },
+        {
+          "start": 3.576,
+          "end": 24.984
+        },
+        {
+          "start": 25.584,
+          "end": 44.736
+        },
+        {
+          "start": 45.336,
+          "end": 61.44
+        },
+        {
+          "start": 62.04,
+          "end": 82.8
+        },
+        {
+          "start": 83.4,
+          "end": 103.416
+        },
+        {
+          "start": 104.016,
+          "end": 120.432
+        }
+      ]
+    },
+    {
+      "title": "How the twenty-four weeks are structured",
+      "audio": "audio/ch02.mp3",
+      "duration": 115.63,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.24
+        },
+        {
+          "start": 3.84,
+          "end": 18.888
+        },
+        {
+          "start": 19.488,
+          "end": 37.752
+        },
+        {
+          "start": 38.352,
+          "end": 60.0
+        },
+        {
+          "start": 60.6,
+          "end": 80.664
+        },
+        {
+          "start": 81.264,
+          "end": 100.968
+        },
+        {
+          "start": 101.568,
+          "end": 115.584
+        }
+      ]
+    },
+    {
+      "title": "Phase zero: start here",
+      "audio": "audio/ch03.mp3",
+      "duration": 96.14,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.12
+        },
+        {
+          "start": 3.72,
+          "end": 21.768
+        },
+        {
+          "start": 22.368,
+          "end": 40.704
+        },
+        {
+          "start": 41.304,
+          "end": 61.344
+        },
+        {
+          "start": 61.944,
+          "end": 81.384
+        },
+        {
+          "start": 81.984,
+          "end": 96.096
+        }
+      ]
+    },
+    {
+      "title": "Phase one: manual QA craft",
+      "audio": "audio/ch04.mp3",
+      "duration": 117.29,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.936
+        },
+        {
+          "start": 4.536,
+          "end": 19.248
+        },
+        {
+          "start": 19.848,
+          "end": 42.912
+        },
+        {
+          "start": 43.512,
+          "end": 62.184
+        },
+        {
+          "start": 62.784,
+          "end": 81.0
+        },
+        {
+          "start": 81.6,
+          "end": 105.96
+        },
+        {
+          "start": 106.56,
+          "end": 117.24
+        }
+      ]
+    },
+    {
+      "title": "Phase two: technical foundations",
+      "audio": "audio/ch05.mp3",
+      "duration": 100.3,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.864
+        },
+        {
+          "start": 4.464,
+          "end": 17.568
+        },
+        {
+          "start": 18.168,
+          "end": 37.44
+        },
+        {
+          "start": 38.04,
+          "end": 56.904
+        },
+        {
+          "start": 57.504,
+          "end": 72.48
+        },
+        {
+          "start": 73.08,
+          "end": 87.84
+        },
+        {
+          "start": 88.44,
+          "end": 100.248
+        }
+      ]
+    },
+    {
+      "title": "Phase three: API testing",
+      "audio": "audio/ch06.mp3",
+      "duration": 86.52,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.768
+        },
+        {
+          "start": 4.368,
+          "end": 19.92
+        },
+        {
+          "start": 20.52,
+          "end": 41.304
+        },
+        {
+          "start": 41.904,
+          "end": 54.672
+        },
+        {
+          "start": 55.272,
+          "end": 72.288
+        },
+        {
+          "start": 72.888,
+          "end": 86.472
+        }
+      ]
+    },
+    {
+      "title": "Phase four: automation and CI/CD",
+      "audio": "audio/ch07.mp3",
+      "duration": 83.16,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 4.992
+        },
+        {
+          "start": 5.592,
+          "end": 16.224
+        },
+        {
+          "start": 16.824,
+          "end": 34.872
+        },
+        {
+          "start": 35.472,
+          "end": 50.16
+        },
+        {
+          "start": 50.76,
+          "end": 65.88
+        },
+        {
+          "start": 66.48,
+          "end": 83.112
+        }
+      ]
+    },
+    {
+      "title": "Phase five: beyond functional",
+      "audio": "audio/ch08.mp3",
+      "duration": 77.14,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.552
+        },
+        {
+          "start": 4.152,
+          "end": 18.816
+        },
+        {
+          "start": 19.416,
+          "end": 45.048
+        },
+        {
+          "start": 45.648,
+          "end": 60.648
+        },
+        {
+          "start": 61.248,
+          "end": 77.088
+        }
+      ]
+    },
+    {
+      "title": "Phase six: get hired",
+      "audio": "audio/ch09.mp3",
+      "duration": 90.65,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.096
+        },
+        {
+          "start": 3.696,
+          "end": 17.784
+        },
+        {
+          "start": 18.384,
+          "end": 37.728
+        },
+        {
+          "start": 38.328,
+          "end": 58.488
+        },
+        {
+          "start": 59.088,
+          "end": 76.464
+        },
+        {
+          "start": 77.064,
+          "end": 90.6
+        }
+      ]
+    },
+    {
+      "title": "The portfolio, project by project",
+      "audio": "audio/ch10.mp3",
+      "duration": 84.58,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.864
+        },
+        {
+          "start": 4.464,
+          "end": 16.224
+        },
+        {
+          "start": 16.824,
+          "end": 35.592
+        },
+        {
+          "start": 36.192,
+          "end": 53.856
+        },
+        {
+          "start": 54.456,
+          "end": 70.176
+        },
+        {
+          "start": 70.776,
+          "end": 84.528
+        }
+      ]
+    },
+    {
+      "title": "Repositioning your experience",
+      "audio": "audio/ch11.mp3",
+      "duration": 90.1,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.336
+        },
+        {
+          "start": 3.936,
+          "end": 13.632
+        },
+        {
+          "start": 14.232,
+          "end": 32.688
+        },
+        {
+          "start": 33.288,
+          "end": 51.6
+        },
+        {
+          "start": 52.2,
+          "end": 72.72
+        },
+        {
+          "start": 73.32,
+          "end": 90.048
+        }
+      ]
+    },
+    {
+      "title": "Interviews and rehearsal",
+      "audio": "audio/ch12.mp3",
+      "duration": 86.11,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.192
+        },
+        {
+          "start": 3.792,
+          "end": 18.24
+        },
+        {
+          "start": 18.84,
+          "end": 33.768
+        },
+        {
+          "start": 34.368,
+          "end": 52.104
+        },
+        {
+          "start": 52.704,
+          "end": 71.808
+        },
+        {
+          "start": 72.408,
+          "end": 86.064
+        }
+      ]
+    },
+    {
+      "title": "Certification and the honest take",
+      "audio": "audio/ch13.mp3",
+      "duration": 82.46,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.792
+        },
+        {
+          "start": 4.392,
+          "end": 22.68
+        },
+        {
+          "start": 23.28,
+          "end": 37.752
+        },
+        {
+          "start": 38.352,
+          "end": 52.464
+        },
+        {
+          "start": 53.064,
+          "end": 72.792
+        },
+        {
+          "start": 73.392,
+          "end": 82.416
+        }
+      ]
+    },
+    {
+      "title": "Job search and the first ninety days",
+      "audio": "audio/ch14.mp3",
+      "duration": 102.1,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 4.056
+        },
+        {
+          "start": 4.656,
+          "end": 21.384
+        },
+        {
+          "start": 21.984,
+          "end": 37.368
+        },
+        {
+          "start": 37.968,
+          "end": 56.112
+        },
+        {
+          "start": 56.712,
+          "end": 80.712
+        },
+        {
+          "start": 81.312,
+          "end": 102.048
+        }
+      ]
+    },
+    {
+      "title": "Keeping the streak",
+      "audio": "audio/ch15.mp3",
+      "duration": 81.43,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 2.64
+        },
+        {
+          "start": 3.24,
+          "end": 19.224
+        },
+        {
+          "start": 19.824,
+          "end": 35.304
+        },
+        {
+          "start": 35.904,
+          "end": 52.272
+        },
+        {
+          "start": 52.872,
+          "end": 65.544
+        },
+        {
+          "start": 66.144,
+          "end": 81.384
+        }
+      ]
+    }
+  ],
+  "audiobook": {
+    "file": "audiobook.mp3",
+    "duration": 1414.08
+  }
+}

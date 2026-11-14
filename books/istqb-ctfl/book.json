@@ -1,0 +1,1181 @@
+{
+  "id": "istqb-ctfl",
+  "title": "ISTQB Foundation Level",
+  "subtitle": "The complete CTFL version 4.0 audio course",
+  "author": "QAReady",
+  "description": "A full narrated course for the ISTQB Certified Tester Foundation Level syllabus version 4.0: all six chapters, the seven principles, test levels and types, static testing, black-box and white-box techniques, test management, tool support, terminology precision and exam strategy.",
+  "color": "#3ddc84",
+  "narrator": "Andrew (Microsoft neural voice)",
+  "epub": "book.epub",
+  "duration": 3541.31,
+  "chapters": [
+    {
+      "title": "Welcome to the course",
+      "audio": "audio/ch01.mp3",
+      "duration": 93.65,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 2.496
+        },
+        {
+          "start": 3.096,
+          "end": 19.68
+        },
+        {
+          "start": 20.28,
+          "end": 37.8
+        },
+        {
+          "start": 38.4,
+          "end": 51.456
+        },
+        {
+          "start": 52.056,
+          "end": 65.712
+        },
+        {
+          "start": 66.312,
+          "end": 78.96
+        },
+        {
+          "start": 79.56,
+          "end": 93.6
+        }
+      ]
+    },
+    {
+      "title": "The exam: format, rules and syllabus",
+      "audio": "audio/ch02.mp3",
+      "duration": 103.56,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 4.464
+        },
+        {
+          "start": 5.064,
+          "end": 21.144
+        },
+        {
+          "start": 21.744,
+          "end": 42.48
+        },
+        {
+          "start": 43.08,
+          "end": 57.84
+        },
+        {
+          "start": 58.44,
+          "end": 74.448
+        },
+        {
+          "start": 75.048,
+          "end": 90.168
+        },
+        {
+          "start": 90.768,
+          "end": 103.512
+        }
+      ]
+    },
+    {
+      "title": "What testing is, and why it exists",
+      "audio": "audio/ch03.mp3",
+      "duration": 108.62,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.744
+        },
+        {
+          "start": 4.344,
+          "end": 21.912
+        },
+        {
+          "start": 22.512,
+          "end": 37.32
+        },
+        {
+          "start": 37.92,
+          "end": 52.68
+        },
+        {
+          "start": 53.28,
+          "end": 70.2
+        },
+        {
+          "start": 70.8,
+          "end": 90.24
+        },
+        {
+          "start": 90.84,
+          "end": 108.576
+        }
+      ]
+    },
+    {
+      "title": "Errors, defects, failures and root causes",
+      "audio": "audio/ch04.mp3",
+      "duration": 102.72,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 4.8
+        },
+        {
+          "start": 5.4,
+          "end": 21.456
+        },
+        {
+          "start": 22.056,
+          "end": 38.232
+        },
+        {
+          "start": 38.832,
+          "end": 55.584
+        },
+        {
+          "start": 56.184,
+          "end": 70.224
+        },
+        {
+          "start": 70.824,
+          "end": 83.88
+        },
+        {
+          "start": 84.48,
+          "end": 102.672
+        }
+      ]
+    },
+    {
+      "title": "The seven testing principles, part one",
+      "audio": "audio/ch05.mp3",
+      "duration": 101.21,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.96
+        },
+        {
+          "start": 4.56,
+          "end": 19.584
+        },
+        {
+          "start": 20.184,
+          "end": 37.488
+        },
+        {
+          "start": 38.088,
+          "end": 54.744
+        },
+        {
+          "start": 55.344,
+          "end": 72.216
+        },
+        {
+          "start": 72.816,
+          "end": 87.192
+        },
+        {
+          "start": 87.792,
+          "end": 101.16
+        }
+      ]
+    },
+    {
+      "title": "The seven testing principles, part two",
+      "audio": "audio/ch06.mp3",
+      "duration": 103.87,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 4.152
+        },
+        {
+          "start": 4.752,
+          "end": 23.28
+        },
+        {
+          "start": 23.88,
+          "end": 40.68
+        },
+        {
+          "start": 41.28,
+          "end": 58.92
+        },
+        {
+          "start": 59.52,
+          "end": 73.464
+        },
+        {
+          "start": 74.064,
+          "end": 92.928
+        },
+        {
+          "start": 93.528,
+          "end": 103.824
+        }
+      ]
+    },
+    {
+      "title": "The test process and its activities",
+      "audio": "audio/ch07.mp3",
+      "duration": 105.72,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.864
+        },
+        {
+          "start": 4.464,
+          "end": 23.544
+        },
+        {
+          "start": 24.144,
+          "end": 40.008
+        },
+        {
+          "start": 40.608,
+          "end": 56.208
+        },
+        {
+          "start": 56.808,
+          "end": 74.856
+        },
+        {
+          "start": 75.456,
+          "end": 91.656
+        },
+        {
+          "start": 92.256,
+          "end": 105.672
+        }
+      ]
+    },
+    {
+      "title": "Testware, traceability and the test basis",
+      "audio": "audio/ch08.mp3",
+      "duration": 108.82,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 4.464
+        },
+        {
+          "start": 5.064,
+          "end": 22.776
+        },
+        {
+          "start": 23.376,
+          "end": 39.408
+        },
+        {
+          "start": 40.008,
+          "end": 56.592
+        },
+        {
+          "start": 57.192,
+          "end": 73.272
+        },
+        {
+          "start": 73.872,
+          "end": 89.616
+        },
+        {
+          "start": 90.216,
+          "end": 108.768
+        }
+      ]
+    },
+    {
+      "title": "The psychology of testing and independence",
+      "audio": "audio/ch09.mp3",
+      "duration": 94.66,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 4.224
+        },
+        {
+          "start": 4.824,
+          "end": 19.248
+        },
+        {
+          "start": 19.848,
+          "end": 36.024
+        },
+        {
+          "start": 36.624,
+          "end": 50.832
+        },
+        {
+          "start": 51.432,
+          "end": 65.856
+        },
+        {
+          "start": 66.456,
+          "end": 79.872
+        },
+        {
+          "start": 80.472,
+          "end": 94.608
+        }
+      ]
+    },
+    {
+      "title": "Testing in the SDLC: sequential and the V-model",
+      "audio": "audio/ch10.mp3",
+      "duration": 92.86,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 5.28
+        },
+        {
+          "start": 5.88,
+          "end": 18.648
+        },
+        {
+          "start": 19.248,
+          "end": 36.264
+        },
+        {
+          "start": 36.864,
+          "end": 53.616
+        },
+        {
+          "start": 54.216,
+          "end": 67.128
+        },
+        {
+          "start": 67.728,
+          "end": 81.168
+        },
+        {
+          "start": 81.768,
+          "end": 92.808
+        }
+      ]
+    },
+    {
+      "title": "Testing in the SDLC: iterative, incremental and Agile",
+      "audio": "audio/ch11.mp3",
+      "duration": 98.11,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 6.096
+        },
+        {
+          "start": 6.696,
+          "end": 19.584
+        },
+        {
+          "start": 20.184,
+          "end": 36.936
+        },
+        {
+          "start": 37.536,
+          "end": 51.792
+        },
+        {
+          "start": 52.392,
+          "end": 67.056
+        },
+        {
+          "start": 67.656,
+          "end": 81.96
+        },
+        {
+          "start": 82.56,
+          "end": 98.064
+        }
+      ]
+    },
+    {
+      "title": "Test levels",
+      "audio": "audio/ch12.mp3",
+      "duration": 90.98,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 2.352
+        },
+        {
+          "start": 2.952,
+          "end": 14.664
+        },
+        {
+          "start": 15.264,
+          "end": 30.528
+        },
+        {
+          "start": 31.128,
+          "end": 46.104
+        },
+        {
+          "start": 46.704,
+          "end": 61.824
+        },
+        {
+          "start": 62.424,
+          "end": 76.8
+        },
+        {
+          "start": 77.4,
+          "end": 90.936
+        }
+      ]
+    },
+    {
+      "title": "Test types",
+      "audio": "audio/ch13.mp3",
+      "duration": 90.84,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 2.592
+        },
+        {
+          "start": 3.192,
+          "end": 12.048
+        },
+        {
+          "start": 12.648,
+          "end": 24.312
+        },
+        {
+          "start": 24.912,
+          "end": 44.4
+        },
+        {
+          "start": 45.0,
+          "end": 60.768
+        },
+        {
+          "start": 61.368,
+          "end": 73.2
+        },
+        {
+          "start": 73.8,
+          "end": 90.792
+        }
+      ]
+    },
+    {
+      "title": "Confirmation, regression and maintenance testing",
+      "audio": "audio/ch14.mp3",
+      "duration": 93.55,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 4.608
+        },
+        {
+          "start": 5.208,
+          "end": 19.008
+        },
+        {
+          "start": 19.608,
+          "end": 35.136
+        },
+        {
+          "start": 35.736,
+          "end": 49.2
+        },
+        {
+          "start": 49.8,
+          "end": 64.248
+        },
+        {
+          "start": 64.848,
+          "end": 79.008
+        },
+        {
+          "start": 79.608,
+          "end": 93.504
+        }
+      ]
+    },
+    {
+      "title": "Static testing basics",
+      "audio": "audio/ch15.mp3",
+      "duration": 102.82,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.192
+        },
+        {
+          "start": 3.792,
+          "end": 16.992
+        },
+        {
+          "start": 17.592,
+          "end": 39.12
+        },
+        {
+          "start": 39.72,
+          "end": 54.12
+        },
+        {
+          "start": 54.72,
+          "end": 70.608
+        },
+        {
+          "start": 71.208,
+          "end": 88.272
+        },
+        {
+          "start": 88.872,
+          "end": 102.768
+        }
+      ]
+    },
+    {
+      "title": "Reviews: process, roles and types",
+      "audio": "audio/ch16.mp3",
+      "duration": 97.03,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 4.608
+        },
+        {
+          "start": 5.208,
+          "end": 18.336
+        },
+        {
+          "start": 18.936,
+          "end": 36.96
+        },
+        {
+          "start": 37.56,
+          "end": 51.552
+        },
+        {
+          "start": 52.152,
+          "end": 67.824
+        },
+        {
+          "start": 68.424,
+          "end": 80.088
+        },
+        {
+          "start": 80.688,
+          "end": 96.984
+        }
+      ]
+    },
+    {
+      "title": "Static analysis by tools",
+      "audio": "audio/ch17.mp3",
+      "duration": 93.72,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.576
+        },
+        {
+          "start": 4.176,
+          "end": 20.712
+        },
+        {
+          "start": 21.312,
+          "end": 37.992
+        },
+        {
+          "start": 38.592,
+          "end": 54.528
+        },
+        {
+          "start": 55.128,
+          "end": 68.184
+        },
+        {
+          "start": 68.784,
+          "end": 82.248
+        },
+        {
+          "start": 82.848,
+          "end": 93.672
+        }
+      ]
+    },
+    {
+      "title": "Test analysis and design overview",
+      "audio": "audio/ch18.mp3",
+      "duration": 93.82,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.888
+        },
+        {
+          "start": 4.488,
+          "end": 16.488
+        },
+        {
+          "start": 17.088,
+          "end": 32.472
+        },
+        {
+          "start": 33.072,
+          "end": 47.088
+        },
+        {
+          "start": 47.688,
+          "end": 65.832
+        },
+        {
+          "start": 66.432,
+          "end": 79.152
+        },
+        {
+          "start": 79.752,
+          "end": 93.768
+        }
+      ]
+    },
+    {
+      "title": "Equivalence partitioning",
+      "audio": "audio/ch19.mp3",
+      "duration": 99.19,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.0
+        },
+        {
+          "start": 3.6,
+          "end": 19.8
+        },
+        {
+          "start": 20.4,
+          "end": 35.064
+        },
+        {
+          "start": 35.664,
+          "end": 52.104
+        },
+        {
+          "start": 52.704,
+          "end": 67.44
+        },
+        {
+          "start": 68.04,
+          "end": 81.576
+        },
+        {
+          "start": 82.176,
+          "end": 99.144
+        }
+      ]
+    },
+    {
+      "title": "Boundary value analysis",
+      "audio": "audio/ch20.mp3",
+      "duration": 103.85,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.216
+        },
+        {
+          "start": 3.816,
+          "end": 17.232
+        },
+        {
+          "start": 17.832,
+          "end": 38.736
+        },
+        {
+          "start": 39.336,
+          "end": 56.568
+        },
+        {
+          "start": 57.168,
+          "end": 73.152
+        },
+        {
+          "start": 73.752,
+          "end": 88.896
+        },
+        {
+          "start": 89.496,
+          "end": 103.8
+        }
+      ]
+    },
+    {
+      "title": "Decision tables and state transitions",
+      "audio": "audio/ch21.mp3",
+      "duration": 103.73,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 4.248
+        },
+        {
+          "start": 4.848,
+          "end": 18.864
+        },
+        {
+          "start": 19.464,
+          "end": 35.88
+        },
+        {
+          "start": 36.48,
+          "end": 49.464
+        },
+        {
+          "start": 50.064,
+          "end": 65.328
+        },
+        {
+          "start": 65.928,
+          "end": 83.664
+        },
+        {
+          "start": 84.264,
+          "end": 103.68
+        }
+      ]
+    },
+    {
+      "title": "White-box and experience-based techniques",
+      "audio": "audio/ch22.mp3",
+      "duration": 108.26,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 4.152
+        },
+        {
+          "start": 4.752,
+          "end": 21.936
+        },
+        {
+          "start": 22.536,
+          "end": 37.824
+        },
+        {
+          "start": 38.424,
+          "end": 51.624
+        },
+        {
+          "start": 52.224,
+          "end": 72.12
+        },
+        {
+          "start": 72.72,
+          "end": 87.024
+        },
+        {
+          "start": 87.624,
+          "end": 108.216
+        }
+      ]
+    },
+    {
+      "title": "Test cases, procedures, coverage and traceability",
+      "audio": "audio/ch23.mp3",
+      "duration": 105.91,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 5.76
+        },
+        {
+          "start": 6.36,
+          "end": 24.168
+        },
+        {
+          "start": 24.768,
+          "end": 44.4
+        },
+        {
+          "start": 45.0,
+          "end": 61.248
+        },
+        {
+          "start": 61.848,
+          "end": 77.856
+        },
+        {
+          "start": 78.456,
+          "end": 93.816
+        },
+        {
+          "start": 94.416,
+          "end": 105.864
+        }
+      ]
+    },
+    {
+      "title": "Managing test activities: planning, estimation and risk",
+      "audio": "audio/ch24.mp3",
+      "duration": 110.74,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 6.024
+        },
+        {
+          "start": 6.624,
+          "end": 25.776
+        },
+        {
+          "start": 26.376,
+          "end": 46.896
+        },
+        {
+          "start": 47.496,
+          "end": 62.4
+        },
+        {
+          "start": 63.0,
+          "end": 80.568
+        },
+        {
+          "start": 81.168,
+          "end": 96.288
+        },
+        {
+          "start": 96.888,
+          "end": 110.688
+        }
+      ]
+    },
+    {
+      "title": "Monitoring, control, reporting, configuration and defects",
+      "audio": "audio/ch25.mp3",
+      "duration": 109.56,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 6.576
+        },
+        {
+          "start": 7.176,
+          "end": 21.528
+        },
+        {
+          "start": 22.128,
+          "end": 36.168
+        },
+        {
+          "start": 36.768,
+          "end": 53.808
+        },
+        {
+          "start": 54.408,
+          "end": 69.024
+        },
+        {
+          "start": 69.624,
+          "end": 89.088
+        },
+        {
+          "start": 89.688,
+          "end": 109.512
+        }
+      ]
+    },
+    {
+      "title": "Test tool support",
+      "audio": "audio/ch26.mp3",
+      "duration": 109.37,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.048
+        },
+        {
+          "start": 3.648,
+          "end": 23.808
+        },
+        {
+          "start": 24.408,
+          "end": 39.216
+        },
+        {
+          "start": 39.816,
+          "end": 56.784
+        },
+        {
+          "start": 57.384,
+          "end": 73.2
+        },
+        {
+          "start": 73.8,
+          "end": 92.832
+        },
+        {
+          "start": 93.432,
+          "end": 109.32
+        }
+      ]
+    },
+    {
+      "title": "Terminology precision drill",
+      "audio": "audio/ch27.mp3",
+      "duration": 116.23,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 3.624
+        },
+        {
+          "start": 4.224,
+          "end": 13.632
+        },
+        {
+          "start": 14.232,
+          "end": 27.912
+        },
+        {
+          "start": 28.512,
+          "end": 43.584
+        },
+        {
+          "start": 44.184,
+          "end": 56.28
+        },
+        {
+          "start": 56.88,
+          "end": 74.976
+        },
+        {
+          "start": 75.576,
+          "end": 94.608
+        },
+        {
+          "start": 95.208,
+          "end": 116.184
+        }
+      ]
+    },
+    {
+      "title": "Worked example: from a specification to test cases",
+      "audio": "audio/ch28.mp3",
+      "duration": 160.99,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 5.232
+        },
+        {
+          "start": 5.832,
+          "end": 29.64
+        },
+        {
+          "start": 30.24,
+          "end": 46.92
+        },
+        {
+          "start": 47.52,
+          "end": 63.6
+        },
+        {
+          "start": 64.2,
+          "end": 85.968
+        },
+        {
+          "start": 86.568,
+          "end": 101.256
+        },
+        {
+          "start": 101.856,
+          "end": 124.32
+        },
+        {
+          "start": 124.92,
+          "end": 144.264
+        },
+        {
+          "start": 144.864,
+          "end": 160.944
+        }
+      ]
+    },
+    {
+      "title": "Worked example: a state transition model",
+      "audio": "audio/ch29.mp3",
+      "duration": 153.07,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 4.44
+        },
+        {
+          "start": 5.04,
+          "end": 21.864
+        },
+        {
+          "start": 22.464,
+          "end": 42.696
+        },
+        {
+          "start": 43.296,
+          "end": 57.576
+        },
+        {
+          "start": 58.176,
+          "end": 79.944
+        },
+        {
+          "start": 80.544,
+          "end": 97.968
+        },
+        {
+          "start": 98.568,
+          "end": 118.272
+        },
+        {
+          "start": 118.872,
+          "end": 135.936
+        },
+        {
+          "start": 136.536,
+          "end": 153.024
+        }
+      ]
+    },
+    {
+      "title": "Practice questions: fundamentals and static testing",
+      "audio": "audio/ch30.mp3",
+      "duration": 179.45,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 5.04
+        },
+        {
+          "start": 5.64,
+          "end": 21.48
+        },
+        {
+          "start": 22.08,
+          "end": 42.576
+        },
+        {
+          "start": 43.176,
+          "end": 61.488
+        },
+        {
+          "start": 62.088,
+          "end": 83.352
+        },
+        {
+          "start": 83.952,
+          "end": 102.144
+        },
+        {
+          "start": 102.744,
+          "end": 119.808
+        },
+        {
+          "start": 120.408,
+          "end": 141.888
+        },
+        {
+          "start": 142.488,
+          "end": 166.392
+        },
+        {
+          "start": 166.992,
+          "end": 179.4
+        }
+      ]
+    },
+    {
+      "title": "Practice questions: techniques, management and tools",
+      "audio": "audio/ch31.mp3",
+      "duration": 194.5,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 5.328
+        },
+        {
+          "start": 5.928,
+          "end": 33.168
+        },
+        {
+          "start": 33.768,
+          "end": 52.584
+        },
+        {
+          "start": 53.184,
+          "end": 71.256
+        },
+        {
+          "start": 71.856,
+          "end": 87.624
+        },
+        {
+          "start": 88.224,
+          "end": 110.712
+        },
+        {
+          "start": 111.312,
+          "end": 131.112
+        },
+        {
+          "start": 131.712,
+          "end": 151.848
+        },
+        {
+          "start": 152.448,
+          "end": 172.104
+        },
+        {
+          "start": 172.704,
+          "end": 194.448
+        }
+      ]
+    },
+    {
+      "title": "Exam strategy and final review",
+      "audio": "audio/ch32.mp3",
+      "duration": 109.9,
+      "elements": [
+        {
+          "start": 0.0,
+          "end": 4.08
+        },
+        {
+          "start": 4.68,
+          "end": 21.84
+        },
+        {
+          "start": 22.44,
+          "end": 39.744
+        },
+        {
+          "start": 40.344,
+          "end": 55.632
+        },
+        {
+          "start": 56.232,
+          "end": 75.288
+        },
+        {
+          "start": 75.888,
+          "end": 91.056
+        },
+        {
+          "start": 91.656,
+          "end": 109.848
+        }
+      ]
+    }
+  ],
+  "audiobook": {
+    "file": "audiobook.mp3",
+    "duration": 3541.3
+  }
+}

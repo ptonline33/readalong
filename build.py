@@ -21,6 +21,7 @@ import asyncio
 import html
 import json
 import os
+import random
 import shutil
 import subprocess
 import sys
@@ -66,16 +67,26 @@ def media_duration(path):
 
 
 async def synthesize(text, path):
-    """Narrate one piece of text with Andrew, retrying on transient failures."""
+    """Narrate one piece of text with Andrew.
+
+    The free Edge endpoint intermittently closes a websocket without sending
+    audio ("No audio was received"), especially under bursty concurrency.
+    Retry generously with jittered backoff and never leave a partial file.
+    """
     last_error = None
-    for attempt in range(1, 4):
+    for attempt in range(1, 8):
         try:
             await edge_tts.Communicate(text, VOICE, rate=RATE).save(str(path))
             if path.exists() and path.stat().st_size > 0:
                 return
+            last_error = "empty output"
         except Exception as exc:  # network / service hiccup
             last_error = exc
-        await asyncio.sleep(2 * attempt)
+        try:
+            path.unlink(missing_ok=True)
+        except OSError:
+            pass
+        await asyncio.sleep(min(18, 1.2 * attempt) + random.random() * 1.5)
     raise RuntimeError(f"TTS failed for {path.name}: {last_error}")
 
 
@@ -99,10 +110,19 @@ def build_chapter_audio(index, chapter, out_mp3, tmp):
     clip_paths = [tmp / f"ch{index + 1:02d}-{i:03d}.mp3" for i in range(len(texts))]
 
     async def synth_all():
-        # Paragraphs are independent, so narrate them side by side instead of
-        # waiting for each websocket round-trip in turn.
-        await asyncio.gather(*(synthesize(text, clip)
-                               for text, clip in zip(texts, clip_paths)))
+        # A modest concurrency cap plus a small stagger stops the Edge endpoint
+        # from dropping websockets on bursty chapters. The semaphore is created
+        # inside this function because asyncio.run() uses a fresh loop per
+        # chapter.
+        sem = asyncio.Semaphore(4)
+
+        async def guarded(text, clip, order):
+            await asyncio.sleep(order * 0.18)
+            async with sem:
+                await synthesize(text, clip)
+
+        await asyncio.gather(*(guarded(text, clip, i)
+                               for i, (text, clip) in enumerate(zip(texts, clip_paths))))
 
     asyncio.run(synth_all())
 

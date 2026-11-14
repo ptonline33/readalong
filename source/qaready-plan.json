@@ -1,0 +1,163 @@
+{
+  "id": "qaready-plan",
+  "title": "The QAReady Plan",
+  "subtitle": "Twenty-four weeks from the service desk to a QA Analyst role",
+  "author": "QAReady",
+  "color": "#7b5cff",
+  "description": "An audio companion to the QAReady course: the full twenty-four week study plan, the seven phases, the weekly rhythm, the portfolio, and the career guide for moving from application support into software quality assurance.",
+  "chapters": [
+    {
+      "title": "Why this roadmap exists",
+      "paragraphs": [
+        "This is a study plan for one very specific journey: moving from a service desk or application support role into a job as a Software QA Analyst. It assumes you already know how to troubleshoot, read logs, write a ticket, talk to frustrated users, and query a database. It assumes you have never held a testing job title.",
+        "The target is a manual-first QA Analyst who can also test an API and read an automated check. That order matters. Automation is simply coding a check for behaviour you already understand. If you cannot design a good test case by hand, an automated test just asserts the wrong thing faster.",
+        "The plan is twenty-four weeks, part-time, at roughly eight to ten focused hours a week. That is about forty-five minutes on three or four weekdays, plus a two or three hour build session at the weekend. It is designed to survive shift work and real life.",
+        "The single most important rule is this: ship something every week. Every week has a deliverable, a real artefact that goes into a repository. If a week slips, you drop the stretch reading, never the deliverable. Skills without a repository do not count in an interview, especially when you are changing careers.",
+        "The curriculum has seven phases, twenty courses, a hundred and ten lessons, and hundreds of exercises. It ends with a portfolio, a rewritten resume, and rehearsed interview answers. Nothing here is magic. It is just a sequence that respects the fact that you are starting from a real job, not from a blank page.",
+        "Keep a study journal from the first day. One paragraph per study day: what you did, what confused you, and what to revisit. Write definitions in your own words. Copying is not learning, and the journal becomes the raw material for your interview stories later."
+      ]
+    },
+    {
+      "title": "How the twenty-four weeks are structured",
+      "paragraphs": [
+        "The weekly rhythm is simple. Monday through Thursday you learn and do exercises. Saturday you build the week's deliverable. Sunday you take the checkpoint quiz and write the journal entry. Treat the calendar blocks like a shift you cannot swap.",
+        "Each of the twenty-four weeks has a focus, a set of courses, a deliverable, and a checkpoint. The checkpoint is usually a quiz score of at least eighty percent, or the ability to explain a concept without notes. The deliverable is always something a stranger could open and understand.",
+        "Before week one, do the setup once. Install Visual Studio Code, Node.js and Git. Create a GitHub account. Start the journal. Pick a practice application for your portfolio, something like Sauce Demo or Automation Exercise, or an open source application you run locally. And export your progress once a week as a backup.",
+        "There are twenty checkpoint moments across the plan, and five portfolio projects. The projects are deliberately cumulative: a manual test suite, a SQL and API investigation, an asserted Postman collection, a Playwright framework with a live continuous integration badge, and a non-functional appendix.",
+        "The phases are not arbitrary. Theory and vocabulary come first, then test design, then documentation, then the technical layer below the user interface, then APIs, then automation, then the non-functional qualities, and only then the job search. Each layer assumes the one before it.",
+        "A useful way to read this audiobook is alongside the app. Listen to a chapter before the week begins, then do the work, then come back and listen to the checkpoint section again. The audio is the map, not the territory."
+      ]
+    },
+    {
+      "title": "Phase zero: start here",
+      "paragraphs": [
+        "Week one is orientation. The goal is to understand the QA role, map your service desk experience onto it, and set up a study routine that survives shift work. The deliverable is a study journal, a GitHub account, and a written paragraph explaining why you are moving into QA.",
+        "You will meet the software development lifecycle, Agile ways of working, the software test lifecycle, the seven testing principles, test levels, test types, and the core vocabulary. Sketch the test lifecycle from memory on paper. Write each of the seven principles in your own words.",
+        "The checkpoint is blunt: explain what a QA Analyst does, and name five transferable skills, without notes. Those five are already yours. Troubleshooting, reproducing problems, writing clear steps, reading logs, and asking a user the right question are all testing skills wearing a support badge.",
+        "Week two consolidates the foundations. Re-read anything you scored below eighty percent on, drill twenty glossary cards, and write five Given, When, Then acceptance criteria for the login of your practice application. The deliverable is those acceptance criteria and a corrected cheat sheet.",
+        "This phase is deliberately gentle. Its purpose is not to make you good at testing in one week. It is to give you a vocabulary, a routine, and a place to put your work. Everything after this assumes those three things exist."
+      ]
+    },
+    {
+      "title": "Phase one: manual QA craft",
+      "paragraphs": [
+        "Weeks two through six are the heart of the course. This is where you learn to choose the few tests that find the most bugs, because exhaustive testing is impossible. The techniques have names, and interviewers use those names as a filter.",
+        "Week three is equivalence partitioning and boundary value analysis. You divide inputs into classes that should behave the same way, then test at and around the edges. A field that accepts one to a hundred gives you values like zero, one, two, ninety-nine, a hundred, and a hundred and one. Do every worked example on paper before you check the answer.",
+        "Week four adds decision tables, state transition diagrams, and exploratory testing. You write a decision table for discount or shipping rules, draw the states of an order and list the transitions that must never happen, and run a forty-five minute chartered exploratory session with session notes.",
+        "Week five is documentation: the test plan with all its sections, fifteen standard test cases, a requirements traceability matrix, a bottom-up estimate, and a three-item risk register. These artefacts are the output of the job, and the thing a hiring manager can actually look at.",
+        "Week six covers defects, tools and communication, and it ends with project one: a complete manual test suite repository with a readable README. You log five full-format defect reports, including one intermittent bug, practise capturing a HAR file and copying a request as a cURL command, and write a test summary report with a go or no-go recommendation.",
+        "The checkpoint for project one is that a stranger can follow your test suite without asking you questions. That single test tells you more about your readiness than any quiz score."
+      ]
+    },
+    {
+      "title": "Phase two: technical foundations",
+      "paragraphs": [
+        "Weeks seven through eleven take you below the user interface. The UI is the last ten percent of the story. Most interesting defects live in the request, the database, or the boundary between them.",
+        "You learn how the web works: HTTP methods, status codes, headers, cookies, and what actually happens between a click and a response. A four hundred and one means unauthenticated; a four hundred and three means authenticated but forbidden. Those two get confused in interviews all the time.",
+        "Then SQL. Selects, joins, grouping, and the difference between equals null and is null. You write a file of verification queries with comments explaining what each one proves. This is where your existing database experience becomes a genuine advantage rather than a line on a resume.",
+        "Then the command line and Git: navigating, searching logs, branching, committing, and writing a commit message that explains why. Then JavaScript from zero, enough to read a test script and understand what an assertion is doing.",
+        "The milestone is your first GitHub repository with a real README. Not a list of tutorials you followed, but a short document explaining what the artefact is, how to run it, and what you checked. That README is a hiring signal.",
+        "The interview questions from this phase are concrete: what would you check in a HAR file, how would you count records by status, and why is a success message on screen not proof that the write succeeded."
+      ]
+    },
+    {
+      "title": "Phase three: API testing",
+      "paragraphs": [
+        "Weeks twelve to fourteen are short and high leverage. APIs are fast, stable, early, and able to send payloads the user interface will never allow. For a first QA role, this is often the most marketable skill in the whole plan.",
+        "You learn REST: resources, statelessness, contracts described by OpenAPI, JSON schemas, authentication, and the difference between POST and PUT. Then Postman: environments, variables, and assertions that check status, schema, values and response time rather than just a two hundred OK.",
+        "Then Newman, running the same collection from the command line and putting it into a continuous integration workflow. The milestone is project three: a public asserted collection with a green Newman build.",
+        "The reason this phase comes before browser automation is deliberate. An API test is easier to write, cheaper to run, and less fragile than a UI test. Learn to assert the contract first, then decorate it with a browser check where the user actually needs one.",
+        "Interview questions here sound like this: what would you test on a POST to orders, what happens if you send the same request twice, and how would you prove that a delete really deleted the row rather than just returning a success message."
+      ]
+    },
+    {
+      "title": "Phase four: automation and CI/CD",
+      "paragraphs": [
+        "Weeks fifteen through twenty are the longest phase. The principle is that you are encoding test thinking so it runs on every change, not learning to code for its own sake.",
+        "You start with strategy: the test pyramid, the ice cream cone anti-pattern, what is worth automating, and what should stay manual. Then Playwright: locators, waits, assertions, and the page object model. Then GitHub Actions and quality gates that fail a build when the checks fail.",
+        "A flaky test is a defect in your test suite, not a fact about the application. You will learn to diagnose one: unstable selectors, race conditions, shared state, or an assertion that depends on timing rather than behaviour.",
+        "The milestone is project four: a Playwright framework with a live continuous integration badge in the README. That badge is a small thing, but it proves the checks actually run unattended, which is the entire point of automation.",
+        "By the end of this phase you should be able to say, out loud, why you chose a particular locator, why the page object model exists, and what you would remove from a slow suite first. Those are the questions that separate someone who followed a tutorial from someone who can own a framework."
+      ]
+    },
+    {
+      "title": "Phase five: beyond functional",
+      "paragraphs": [
+        "Weeks twenty-one and twenty-two cover the qualities that are not about whether a feature works, but whether it is usable under real conditions. A product can be bug-free and still be slow, inaccessible, insecure or unusable.",
+        "Performance: load, stress, soak and spike testing, and why the ninety-fifth percentile matters more than the average. Accessibility: WCAG, keyboard navigation, contrast, and screen reader labels. Security: common issues like insecure direct object references. Usability, compatibility, localisation and privacy all get their own pass.",
+        "The milestone is a non-functional appendix to the test plan you wrote back in week five. This is a nice piece of portfolio storytelling, because it shows you can return to an old artefact and deepen it rather than always starting something new.",
+        "The interview questions here are short and revealing: why not the average, what does WCAG double A mean, and what is an insecure direct object reference. You do not need to be a specialist. You need to know what to ask for and how to write a measurable target."
+      ]
+    },
+    {
+      "title": "Phase six: get hired",
+      "paragraphs": [
+        "Weeks twenty-three and twenty-four turn the work into a job. The ISTQB certification, the portfolio, the resume, the cover letter, interview rehearsal, the job search, and a plan for the first ninety days.",
+        "The honest take on certification is that the CTFL is worth doing, but it is a vocabulary credential, not a substitute for a portfolio. It is recognised, relatively inexpensive, and roughly eighty percent of it is material you have already covered by week twenty-three. It is a first pick, not a strategy.",
+        "The job titles to search for are broader than QA Analyst: Software Test Analyst, Software Tester, Manual QA Tester, Test Analyst, Junior QA Engineer, UAT Analyst, and even Application Support Analyst with testing responsibilities. That last one is often the easiest bridge from where you are now.",
+        "The plan suggests five to eight tailored applications a week, mirroring three genuine keywords from each advertisement, one learning note on LinkedIn each week, and fifteen core interview answers rehearsed aloud twice a week. Small, boring, repeatable actions.",
+        "And the first ninety days: learn the product, find the regression pack, ship one small useful improvement, and keep the continuous integration badges green. The goal of the first month is trust, not heroics."
+      ]
+    },
+    {
+      "title": "The portfolio, project by project",
+      "paragraphs": [
+        "There are five portfolio projects, and they are the most important section of the entire plan. Each has a checklist and a copyable artefact template, so you are never staring at a blank page.",
+        "Project one is the manual test suite: a test plan, twenty-five cases, a traceability matrix, five defect reports, and a summary. Project two is the SQL and API investigation, with verification queries and a triage note attached to a HAR capture.",
+        "Project three is the public asserted Postman collection with green Newman continuous integration. Project four is the Playwright framework with a live build badge. Project five is the non-functional appendix, with measurable targets for performance and accessibility.",
+        "Together they tell one story: you can reason about behaviour, work below the interface, assert a contract, automate a check, and think about qualities beyond functional correctness. That is a much stronger story than a certificate on its own.",
+        "Keep every README short and honest. Say what the project does, how to run it, what you checked, and what you would do next with more time. A hiring manager reads four READMEs in four minutes; make those minutes count."
+      ]
+    },
+    {
+      "title": "Repositioning your experience",
+      "paragraphs": [
+        "Nothing in this plan asks you to pretend you have five years of testing experience. It asks you to re-label what you already do in the vocabulary the role uses.",
+        "A ticket with reproduction steps is a defect report. A tricky escalation you narrowed down by eliminating variables is root cause analysis. A knowledge base article is test documentation. A recurring incident pattern is a risk register entry. A handover note is a test summary.",
+        "The resume exercise is a rewrite, not an invention. Lead with a summary that names the target role, then a skills section with testing vocabulary you can defend, then experience bullets rewritten as outcomes: reproduced, isolated, documented, verified, reduced.",
+        "Cover letters follow a simple template: why this role, two pieces of evidence from your portfolio, and one sentence about the domain. STAR stories, Situation, Task, Action, Result, should be prepared for a difficult escalation, a pattern others had missed, and a time you had to say no to a release.",
+        "The interview loop is usually a recruiter screen, a technical interview, a practical exercise, and a behavioural conversation. In the practical exercise, state your assumptions out loud before you start testing. That habit alone is worth more than a perfect answer."
+      ]
+    },
+    {
+      "title": "Interviews and rehearsal",
+      "paragraphs": [
+        "There are forty-six interview questions and answers in the career kit, grouped into manual and fundamentals, SQL and API, automation, and behavioural. The plan is to drill three banks rather than memorise a script.",
+        "Use the PREP shape for answers: Point, Reason, Example, Point. Say the answer first, explain why, give one concrete example from your portfolio, then land the point again. It keeps you from rambling when you are nervous.",
+        "Expect classics: test a login page, design cases for a field from one to a hundred, explain severity versus priority with an example, name what goes in a test plan, and describe how you would fix a flaky test. All of them are answerable from the work in this plan.",
+        "Rehearse aloud, not in your head. Fifteen core answers, twice a week, out loud. Also rehearse the ninety-second repository walkthrough: what this project is, what it proves, and what you would improve. That walkthrough is the single most useful thirty seconds of any career-change interview.",
+        "And prepare questions to ask them: how big is the regression pack, is QA in refinement, who signs off a release, and what does the first month look like. Good questions signal that you have actually done the job in miniature."
+      ]
+    },
+    {
+      "title": "Certification and the honest take",
+      "paragraphs": [
+        "QAReady takes a clear position on certification. The ISTQB Certified Tester Foundation Level is the one worth doing first. It is globally recognised, reasonably priced, about forty multiple-choice questions, and widely accepted as a vocabulary baseline.",
+        "The Agile Tester extension is a reasonable follow-up if you land in an Agile team. The advanced levels, Test Analyst, Test Manager and Test Automation Engineer, are for later, once you have a few years of practice behind you.",
+        "The important caveat is that a certificate does not replace a repository. It tells a hiring manager you know the words. Your portfolio tells them you can do the work. For a career changer, the second one is what gets you the interview.",
+        "The exam also rewards precise wording. Terms like test condition, test case, test procedure, test basis, confirmation testing, incident and testware have specific meanings, and questions often turn on a single word. That is why the glossary and flashcards are worth drilling in the final weeks.",
+        "If you do sit the exam, do it near week twenty-three, when the material is still warm, and treat the result as a checkpoint rather than a verdict."
+      ]
+    },
+    {
+      "title": "Job search and the first ninety days",
+      "paragraphs": [
+        "The job search is a numbers game with a quality filter. Five to eight tailored applications a week, three genuine keywords mirrored from each advertisement, and a weekly learning note that makes your activity visible. Track every application in a simple sheet.",
+        "Do not wait until week twenty-four to start. By week twenty-three your portfolio exists and your resume is rewritten; applications can begin while you rehearse. Rejection is data, not a verdict, and a recruiter screen is free practise.",
+        "Once you are in, the first ninety days have a shape. In the first month, learn the product and find the regression pack. In the second, own one area and ship one small useful improvement. In the third, propose one change to the process and keep the continuous integration badges green.",
+        "The career paths after that branch: Senior QA Analyst or QA Lead, SDET or Test Automation Engineer, Quality Engineer, a specialist in performance, security or accessibility, a data or mobile specialist, or an adjacent role like product owner, business analyst or release manager. Your support background transfers strongly to that last group.",
+        "The ten rules to remember are unglamorous and they work: manual thinking first, build something every week, write definitions in your own words, test below the UI, assert the contract, automate only what you understand, measure the ninety-fifth percentile, keep the README honest, rehearse aloud, and keep shipping."
+      ]
+    },
+    {
+      "title": "Keeping the streak",
+      "paragraphs": [
+        "Progress in this plan comes from boring consistency, not from a heroic weekend. The app tracks a day streak, bookmarks, notes, and quiz scores, but those are scaffolding. The real measure is the repository growing one artefact at a time.",
+        "When a week goes wrong, and one will, do not restart the plan. Drop the stretch reading, keep the deliverable, and move to the next week. A twenty-four week plan with three imperfect weeks is still a finished plan. A restarted plan is not.",
+        "Use spaced repetition for the things that decay: glossary cards, SQL syntax, and interview answers. Ten minutes a day beats two hours on Sunday. Export your progress once a week so a lost laptop cannot erase six months of work.",
+        "And keep the journal. In six months it will be the source of your best interview stories, because it records what confused you before you understood it. That is exactly the material an interviewer wants to hear about.",
+        "You already have the hardest skill this role needs: you can look at something broken, work out what changed, and explain it clearly to another human being. Everything in the twenty-four weeks is just giving that skill a new vocabulary and a place to show it."
+      ]
+    }
+  ]
+}
